@@ -1,0 +1,382 @@
+[
+  {
+    "event_id": "copa_am_2024_jun25",
+    "date": "2024-06-25",
+    "event_name": "Copa Am\u00e9rica 2024 \u2014 Argentina vs Canada (Group A)",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "soccer_international",
+    "kickoff_et": "20:00",
+    "attendance": 82500,
+    "description": "Copa Am\u00e9rica 2024 Group A match between Argentina and Canada at MetLife Stadium, East Rutherford, New Jersey. Kickoff 20:00 ET. Transit hub: NJ Transit from New York Penn Station via Northeast Corridor and North Jersey Coast Line. Large Latin American fanbase expected, significant pre-match ridership surge from Penn Station beginning 17:00 ET.",
+    "confirmed": true,
+    "source": "copa_america_2024_impact.csv"
+  },
+  {
+    "event_id": "copa_am_2024_jun27",
+    "date": "2024-06-27",
+    "event_name": "Copa Am\u00e9rica 2024 \u2014 Ecuador vs Jamaica (Group B)",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "soccer_international",
+    "kickoff_et": "18:00",
+    "attendance": 82500,
+    "description": "Copa Am\u00e9rica 2024 Group B match between Ecuador and Jamaica at MetLife Stadium, East Rutherford, New Jersey. Kickoff 18:00 ET Thursday. NJ Transit service from Penn Station. Afternoon pre-match ridership surge expected beginning 14:00-15:00 ET at Penn Station corridor.",
+    "confirmed": true,
+    "source": "copa_america_2024_impact.csv"
+  },
+  {
+    "event_id": "copa_am_2024_jul09",
+    "date": "2024-07-09",
+    "event_name": "Copa Am\u00e9rica 2024 \u2014 Final (Argentina vs Colombia)",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "soccer_international",
+    "kickoff_et": "20:00",
+    "attendance": 82500,
+    "description": "Copa Am\u00e9rica 2024 Final between Argentina and Colombia at MetLife Stadium, East Rutherford, New Jersey. Kickoff 20:00 ET Tuesday. Highest-profile match of the tournament, maximum expected ridership on NJ Transit Northeast Corridor from Penn Station. Return surge post-match expected at 22:30-24:00 ET.",
+    "confirmed": true,
+    "source": "copa_america_2024_impact.csv"
+  },
+  {
+    "event_id": "taylor_swift_metlife_oct18_2024",
+    "date": "2024-10-18",
+    "event_name": "Taylor Swift \u2014 The Eras Tour (Night 1 of 3)",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "concert_pop",
+    "kickoff_et": "19:00",
+    "attendance": 82500,
+    "description": "Taylor Swift Eras Tour concert at MetLife Stadium, East Rutherford, New Jersey. Night 1 of 3-night stand. Show start 19:00 ET Friday. NJ Transit service from Penn Station. Young adult female-skewed audience, large proportion arriving by transit. Ridership surge expected 16:00-19:00 ET at Penn Station, post-show return 23:00-01:00 ET.",
+    "confirmed": true,
+    "source": "cross_event_validation.csv"
+  },
+  {
+    "event_id": "taylor_swift_metlife_oct19_2024",
+    "date": "2024-10-19",
+    "event_name": "Taylor Swift \u2014 The Eras Tour (Night 2 of 3)",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "concert_pop",
+    "kickoff_et": "19:00",
+    "attendance": 82500,
+    "description": "Taylor Swift Eras Tour concert at MetLife Stadium, East Rutherford, New Jersey. Night 2 of 3, Saturday show. 19:00 ET start. NJ Transit special service from Penn Station. Peak pre-show ridership 16:00-19:00 ET, post-show return surge 22:30-00:30 ET.",
+    "confirmed": true,
+    "source": "cross_event_validation.csv"
+  },
+  {
+    "event_id": "taylor_swift_metlife_oct20_2024",
+    "date": "2024-10-20",
+    "event_name": "Taylor Swift \u2014 The Eras Tour (Night 3 of 3)",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "concert_pop",
+    "kickoff_et": "19:00",
+    "attendance": 82500,
+    "description": "Taylor Swift Eras Tour concert at MetLife Stadium, East Rutherford, New Jersey. Final night, Sunday show. 19:00 ET. Last show of NYC leg. NJ Transit from Penn Station. Post-show Sunday ridership surge expected 22:00-00:00 ET.",
+    "confirmed": true,
+    "source": "cross_event_validation.csv"
+  },
+  {
+    "event_id": "nyc_pride_2022",
+    "date": "2022-06-26",
+    "event_name": "NYC Pride March 2022",
+    "venue": "5th Avenue to Christopher Street, West Village, Manhattan",
+    "venue_cluster": "WVillage",
+    "venue_sids": [
+      225,
+      224,
+      223,
+      222
+    ],
+    "event_type": "parade_street",
+    "kickoff_et": "12:00",
+    "attendance": 500000,
+    "description": "NYC Pride March 2022, annual LGBTQ+ celebration and parade in Manhattan. Parade route along 5th Avenue from 25th Street, ending at Christopher Street and West Village. Massive foot traffic concentrated in Greenwich Village and West Village neighborhoods. Key MTA stations: Christopher St-Sheridan Square (1 train), 14 St (ACE/FMJZ), Houston St. Peak ridership 13:00-19:00 ET. Post-parade West Village nightlife activity until late.",
+    "confirmed": true,
+    "source": "manual_identification"
+  },
+  {
+    "event_id": "nyc_pride_2023",
+    "date": "2023-06-25",
+    "event_name": "NYC Pride March 2023",
+    "venue": "5th Avenue to Christopher Street, West Village, Manhattan",
+    "venue_cluster": "WVillage",
+    "venue_sids": [
+      225,
+      224,
+      223,
+      222
+    ],
+    "event_type": "parade_street",
+    "kickoff_et": "12:00",
+    "attendance": 500000,
+    "description": "NYC Pride March 2023, annual LGBTQ+ celebration and parade in Manhattan. Parade route along 5th Avenue ending at Christopher Street, West Village. One of the largest annual public events in New York City. MTA stations: Christopher St-Sheridan Square, 14 St (A,C,E), Houston St. Afternoon and evening concentration of ridership in West Village and Greenwich Village.",
+    "confirmed": true,
+    "source": "manual_identification"
+  },
+  {
+    "event_id": "nyc_pride_2024",
+    "date": "2024-06-30",
+    "event_name": "NYC Pride March 2024",
+    "venue": "5th Avenue to Christopher Street, West Village, Manhattan",
+    "venue_cluster": "WVillage",
+    "venue_sids": [
+      225,
+      224,
+      223,
+      222
+    ],
+    "event_type": "parade_street",
+    "kickoff_et": "12:00",
+    "attendance": 500000,
+    "description": "NYC Pride March 2024, annual LGBTQ+ celebration. Parade route 5th Avenue to Christopher Street. West Village, Greenwich Village as primary destinations. Christopher St-Sheridan Square (1 train) and 14th Street stations are primary transit access points. Heavy foot traffic 11:00-22:00 ET with peaks at 13:00-17:00 (parade) and 19:00-21:00 (nightlife).",
+    "confirmed": true,
+    "source": "manual_identification"
+  },
+  {
+    "event_id": "nyc_marathon_2022",
+    "date": "2022-11-06",
+    "event_name": "TCS New York City Marathon 2022",
+    "venue": "Central Park finish line, Columbus Circle, Upper West Side, Manhattan",
+    "venue_cluster": "CentralPark",
+    "venue_sids": [
+      160,
+      313,
+      614,
+      158,
+      311
+    ],
+    "event_type": "race_marathon",
+    "kickoff_et": "08:30",
+    "attendance": 50000,
+    "description": "TCS New York City Marathon 2022. 26.2-mile race finishing at Central Park. Race start 08:30 ET (waves 07:30-10:00). Finish area: Central Park Drive near Tavern on the Green, Columbus Circle (59 St). Spectators concentrated on Upper West Side along Columbus Avenue, Central Park West, and around Columbus Circle. Key MTA stations: 72 St (1,2,3), 86 St (1), 59 St-Columbus Circle (A,B,C,D,1). Heavy early-morning ridership (06:00-10:00 ET) toward Central Park, post-race outflow 14:00-18:00 ET.",
+    "confirmed": true,
+    "source": "manual_identification"
+  },
+  {
+    "event_id": "nyc_marathon_2023",
+    "date": "2023-11-05",
+    "event_name": "TCS New York City Marathon 2023",
+    "venue": "Central Park finish line, Columbus Circle, Upper West Side, Manhattan",
+    "venue_cluster": "CentralPark",
+    "venue_sids": [
+      160,
+      313,
+      614,
+      158,
+      311
+    ],
+    "event_type": "race_marathon",
+    "kickoff_et": "08:30",
+    "attendance": 50000,
+    "description": "TCS New York City Marathon 2023. Finish at Central Park, Columbus Circle area. Spectators on Upper West Side along Central Park West and Columbus Avenue. MTA stations: 72 St, 86 St (1 train), Columbus Circle (A,B,C,D,1). Early morning ridership surge (06:00-10:00 ET), post-race dispersal 13:00-17:00 ET.",
+    "confirmed": true,
+    "source": "manual_identification"
+  },
+  {
+    "event_id": "nyc_marathon_2024",
+    "date": "2024-11-03",
+    "event_name": "TCS New York City Marathon 2024",
+    "venue": "Central Park finish line, Columbus Circle, Upper West Side, Manhattan",
+    "venue_cluster": "CentralPark",
+    "venue_sids": [
+      160,
+      313,
+      614,
+      158,
+      311
+    ],
+    "event_type": "race_marathon",
+    "kickoff_et": "08:30",
+    "attendance": 55000,
+    "description": "TCS New York City Marathon 2024, record participation. Finish at Central Park. Columbus Circle (59 St) and 72nd Street are primary transit hubs for spectators and runners. Distinctive early-morning ridership pattern: surge begins 06:00 ET, peak 08:00-10:00 ET at Columbus Circle and 72 St. Post-race outflow 13:00-17:00 ET.",
+    "confirmed": true,
+    "source": "manual_identification"
+  },
+  {
+    "event_id": "nfl_metlife_20241013",
+    "date": "2024-10-13",
+    "event_name": "NFL Home Game at MetLife Stadium \u2014 2024-10-13",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "sports_nfl_metlife",
+    "attendance": null,
+    "confirmed": true,
+    "source": "ridership_signal_detection",
+    "description": "NFL regular season home game at MetLife Stadium, East Rutherford, NJ (2024-10-13). New York Giants or New York Jets home game, Sunday afternoon kickoff. Transit hub: NJ Transit from New York Penn Station (Northeast Corridor and North Jersey Coast Line). Ridership surge at 34th Street Penn Station corridors beginning 2-3 hours before kickoff, with return surge in the evening. American football fanbase, predominantly local NY/NJ residents."
+  },
+  {
+    "event_id": "nfl_metlife_20241027",
+    "date": "2024-10-27",
+    "event_name": "NFL Home Game at MetLife Stadium \u2014 2024-10-27",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "sports_nfl_metlife",
+    "attendance": null,
+    "confirmed": true,
+    "source": "ridership_signal_detection",
+    "description": "NFL regular season home game at MetLife Stadium, East Rutherford, NJ (2024-10-27). New York Giants or New York Jets home game, Sunday afternoon kickoff. Transit hub: NJ Transit from New York Penn Station (Northeast Corridor and North Jersey Coast Line). Ridership surge at 34th Street Penn Station corridors beginning 2-3 hours before kickoff, with return surge in the evening. American football fanbase, predominantly local NY/NJ residents."
+  },
+  {
+    "event_id": "nfl_metlife_20241201",
+    "date": "2024-12-01",
+    "event_name": "NFL Home Game at MetLife Stadium \u2014 2024-12-01",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "sports_nfl_metlife",
+    "attendance": null,
+    "confirmed": true,
+    "source": "ridership_signal_detection",
+    "description": "NFL regular season home game at MetLife Stadium, East Rutherford, NJ (2024-12-01). New York Giants or New York Jets home game, Sunday afternoon kickoff. Transit hub: NJ Transit from New York Penn Station (Northeast Corridor and North Jersey Coast Line). Ridership surge at 34th Street Penn Station corridors beginning 2-3 hours before kickoff, with return surge in the evening. American football fanbase, predominantly local NY/NJ residents."
+  },
+  {
+    "event_id": "nfl_metlife_20241208",
+    "date": "2024-12-08",
+    "event_name": "NFL Home Game at MetLife Stadium \u2014 2024-12-08",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "sports_nfl_metlife",
+    "attendance": null,
+    "confirmed": true,
+    "source": "ridership_signal_detection",
+    "description": "NFL regular season home game at MetLife Stadium, East Rutherford, NJ (2024-12-08). New York Giants or New York Jets home game, Sunday afternoon kickoff. Transit hub: NJ Transit from New York Penn Station (Northeast Corridor and North Jersey Coast Line). Ridership surge at 34th Street Penn Station corridors beginning 2-3 hours before kickoff, with return surge in the evening. American football fanbase, predominantly local NY/NJ residents."
+  },
+  {
+    "event_id": "nfl_metlife_20241215",
+    "date": "2024-12-15",
+    "event_name": "NFL Home Game at MetLife Stadium \u2014 2024-12-15",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "sports_nfl_metlife",
+    "attendance": null,
+    "confirmed": true,
+    "source": "ridership_signal_detection",
+    "description": "NFL regular season home game at MetLife Stadium, East Rutherford, NJ (2024-12-15). New York Giants or New York Jets home game, Sunday afternoon kickoff. Transit hub: NJ Transit from New York Penn Station (Northeast Corridor and North Jersey Coast Line). Ridership surge at 34th Street Penn Station corridors beginning 2-3 hours before kickoff, with return surge in the evening. American football fanbase, predominantly local NY/NJ residents."
+  },
+  {
+    "event_id": "nfl_metlife_20241222",
+    "date": "2024-12-22",
+    "event_name": "NFL Home Game at MetLife Stadium \u2014 2024-12-22",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "sports_nfl_metlife",
+    "attendance": null,
+    "confirmed": true,
+    "source": "ridership_signal_detection",
+    "description": "NFL regular season home game at MetLife Stadium, East Rutherford, NJ (2024-12-22). New York Giants or New York Jets home game, Sunday afternoon kickoff. Transit hub: NJ Transit from New York Penn Station (Northeast Corridor and North Jersey Coast Line). Ridership surge at 34th Street Penn Station corridors beginning 2-3 hours before kickoff, with return surge in the evening. American football fanbase, predominantly local NY/NJ residents."
+  },
+  {
+    "date": "2024-12-29",
+    "event_name": "NFL Game at MetLife 2024-12-29",
+    "venue": "MetLife Stadium, East Rutherford NJ",
+    "venue_cluster": "MetLife_Penn",
+    "venue_sids": [
+      164,
+      318,
+      607
+    ],
+    "event_type": "sports_nfl_metlife",
+    "attendance": null,
+    "confirmed": true,
+    "source": "ridership_signal_detection",
+    "description": "NFL regular season home game at MetLife Stadium, East Rutherford, NJ (2024-12-29). New York Giants or New York Jets home game. Fans travel via NJ Transit to Penn Station (34th St corridor), creating measurable ridership spike on Sundays Sep-Jan. Penn Station stations (164, 318, 607) serve as primary transit access point."
+  },
+  {
+    "date": "2021-11-07",
+    "event_name": "NYC Marathon 2021",
+    "venue_cluster": "CentralPark",
+    "venue_sids": [
+      158,
+      159,
+      160,
+      311,
+      313,
+      397,
+      476,
+      477,
+      614
+    ],
+    "event_type": "race_marathon",
+    "attendance": 33000,
+    "confirmed": true,
+    "source": "official_schedule",
+    "description": "NYC Marathon 2021, November 7, Central Park finish line. First NYC Marathon since 2019 \u2014 cancelled in 2020 due to COVID-19. 33,000 runners (reduced capacity), major spectator crowds along the route. Peak demand at Central Park South stations (59 St Columbus Circle, 72 St, 86 St) in the morning (race start 8am) and afternoon (finishers)."
+  },
+  {
+    "date": "2021-06-27",
+    "event_name": "NYC Pride March 2021",
+    "venue_cluster": "WVillage",
+    "venue_sids": [
+      323,
+      324,
+      601,
+      618
+    ],
+    "event_type": "parade_street",
+    "attendance": null,
+    "confirmed": true,
+    "source": "official_schedule",
+    "description": "NYC Pride March 2021, June 27, Fifth Avenue to Greenwich Village. First in-person Pride event since 2019 \u2014 modified format due to COVID-19 restrictions. Crowds concentrated around Christopher Street, Hudson Street, and 14th Street. Significant foot traffic on West Village subway stations (Christopher St, Houston St, 14 St)."
+  }
+]

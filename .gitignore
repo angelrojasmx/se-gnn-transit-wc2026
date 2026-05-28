@@ -1,0 +1,43 @@
+# Data (too large or not redistributable)
+data/nyc/*.parquet
+data/nyc/*.csv
+# Keep small reference files that are included in the repository
+!data/nyc/mta_manhattan_lookup.csv
+!data/nyc/penn_corridor_spikes_2022_2024.csv
+data/nyc/raw/
+data/cdmx/afluencia/
+data/cdmx/_outputs/
+
+# Generated outputs (reproducible from scripts)
+outputs/paper/
+outputs/cdmx/
+outputs/van/
+outputs/nyc/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environments
+.env
+.venv/
+env/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
