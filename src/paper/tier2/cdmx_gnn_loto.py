@@ -83,10 +83,10 @@ VENUE_CATCHMENT: dict[str, list[str]] = {
         "tasquea",            # L2 terminus
     ],
     "Pumas/CU": [
-        "copilco",            # L3
-        "universidad",        # L3
-        "viveros",            # L3 — adjacent
-        "miguel a de quevedo",# L3 — adjacent
+        "copilco",                    # L3
+        "universidad",                # L3
+        "viveros/derechos humanos",   # L3 — adjacent (full name in station_lookup.csv)
+        "miguel ngel de quevedo",     # L3 — adjacent (accent-stripped in station_lookup.csv)
     ],
 }
 
