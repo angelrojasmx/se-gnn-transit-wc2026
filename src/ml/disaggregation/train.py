@@ -146,7 +146,7 @@ def train():
     if not data_dir.exists():
         raise FileNotFoundError(
             f"Data directory not found: {data_dir}\n"
-            "Run first: python src/demand/build_dataset.py --source manhattan"
+            "Run first: python src/demand/build_dataset.py"
         )
     print(f"Loading Manhattan data from {data_dir}...")
     profiles  = pd.read_parquet(data_dir / "daily_profiles.parquet")
