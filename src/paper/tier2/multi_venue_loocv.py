@@ -491,6 +491,7 @@ if __name__ == "__main__":
 
     OUT_DIR  = ROOT / "outputs/paper/nyc"
     FIG_DIR  = ROOT / "outputs/paper/comparative/figures"
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
     FIG_DIR.mkdir(parents=True, exist_ok=True)
 
     print("=" * 60)
