@@ -10,29 +10,11 @@ from pathlib import Path
 # Repository root and top-level directories
 ROOT        = Path(__file__).resolve().parents[2]
 DATA_DIR    = ROOT / "data"
-LEGACY_DIR  = ROOT / "legacy"
 OUTPUTS_DIR = ROOT / "outputs" / "paper"
-
-# CDMX inputs (from legacy pipeline outputs)
-CDMX_AFLUENCIA = (
-    LEGACY_DIR / "gtfsCDMX" / "afluencia" / "_outputs"
-    / "afluencia_multimodal_long.csv"
-)
-CDMX_BASELINE = (
-    LEGACY_DIR / "gtfsCDMX" / "afluencia" / "_outputs"
-    / "baseline_by_mode_weekday_postcovid.csv"
-)
 
 # NYC inputs
 NYC_HOURLY   = DATA_DIR / "nyc" / "raw" / "mta_manhattan_2022_2024.parquet"
 NYC_LOOKUP   = DATA_DIR / "nyc" / "mta_manhattan_lookup.csv"
-
-# Vancouver inputs
-VAN_GTFS_DIR = LEGACY_DIR / "gtfsVAN"
-VAN_TSPR_CSV = (
-    LEGACY_DIR / "gtfsVAN" / "canada_outputs"
-    / "tspr2024_skytrain_station_daytype_hourly.csv"
-)
 
 # Trained GNN backbone checkpoint
 GNN_MODEL = ROOT / "outputs" / "nyc" / "manhattan_model.pt"
@@ -81,13 +63,6 @@ WC2026_VAN = [
 
 
 # Historical analogs
-
-# Copa América 2024 at MetLife — same venue as WC2026 NYC, strongest analog
-COPA_AMERICA_METLIFE_2024 = [
-    ("2024-06-25", "Tuesday",  "Chile vs Argentina",            "Group A"),
-    ("2024-06-27", "Thursday", "Uruguay vs Bolivia",            "Group C"),
-    ("2024-07-09", "Tuesday",  "Semifinal: Argentina vs Canada", "Semifinal"),
-]
 
 # NFL MetLife (Giants/Jets) — secondary NYC analogs
 # ~8 home games per team per season; listed dates are high-demand matches
