@@ -438,9 +438,9 @@ def run_loocv(
         fold_model.eval()
         with torch.no_grad():
             # Backbone only (event_emb=None gives identity FiLM)
-            prof_base = fold_model(test_s["x"], A_hat, event_emb=None)[penn_idxs].mean(dim=0)
+            prof_base = fold_model(test_s["x"].to(device), A_hat_dev, event_emb=None)[penn_idxs].mean(dim=0)
             # FiLM-conditioned
-            prof_llm  = fold_model(test_s["x"], A_hat, test_s["event_emb"])[penn_idxs].mean(dim=0)
+            prof_llm  = fold_model(test_s["x"].to(device), A_hat_dev, test_s["event_emb"].to(device))[penn_idxs].mean(dim=0)
             tgt       = test_s["target"]
 
             mae_base = (prof_base - tgt).abs().mean().item()
@@ -760,8 +760,7 @@ def run(phase: str = "all"):
                           "evening_share_llm":  float(
                               g[g["hour"].between(18, 23)]["weight_llm"].sum() * 100
                           ),
-                      }),
-                      include_groups=False,
+                      })
                   )
                   .reset_index()
         )
