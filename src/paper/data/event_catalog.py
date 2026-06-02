@@ -658,16 +658,33 @@ METLIFE_CONCERTS_2024 = [
 ALL_EVENTS = (COPA_AMERICA_2024 + WC2026_NYC_CATALOG + WC2026_CDMX_CATALOG
               + WC2026_VAN_CATALOG + METLIFE_CONCERTS_2024)
 
-_by_id   = {e["id"]:   e for e in ALL_EVENTS}
-_by_date = {e["date"]: e for e in ALL_EVENTS}
+_by_id = {e["id"]: e for e in ALL_EVENTS}
+
+# Multiple cities can share a date (e.g. 2026-06-13: NYC and Vancouver).
+# _by_date maps date → list of events to avoid silent overwrites.
+_by_date: dict[str, list] = {}
+for _e in ALL_EVENTS:
+    _by_date.setdefault(_e["date"], []).append(_e)
 
 
 def get_event_by_id(event_id: str) -> dict | None:
     return _by_id.get(event_id)
 
 
+def get_events_by_date(date_str: str) -> list[dict]:
+    """Return all events on a given date (may be multiple if different venues)."""
+    return _by_date.get(date_str, [])
+
+
 def get_event_by_date(date_str: str) -> dict | None:
-    return _by_date.get(date_str)
+    """
+    Return the first event on a given date, or None.
+
+    If multiple events share the date (different venues), use
+    get_events_by_date() to retrieve all of them.
+    """
+    events = _by_date.get(date_str, [])
+    return events[0] if events else None
 
 
 def get_description(date_str: str) -> str | None:
