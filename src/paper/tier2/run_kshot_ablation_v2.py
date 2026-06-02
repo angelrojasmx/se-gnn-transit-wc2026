@@ -47,6 +47,7 @@ CATALOG_V2   = ROOT / "data/nyc/event_catalog_expanded_v2.json"
 EMB_CACHE    = ROOT / "outputs/paper/nyc/event_embeddings_cache.json"
 OUT          = ROOT / "outputs/paper/nyc"
 FIG          = ROOT / "outputs/paper/comparative/figures"
+OUT.mkdir(parents=True, exist_ok=True)
 FIG.mkdir(parents=True, exist_ok=True)
 
 VENUE_COORDS = {
