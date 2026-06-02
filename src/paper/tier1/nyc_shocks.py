@@ -26,9 +26,9 @@ import pandas as pd
 from config import (
     NYC_HOURLY, POST_COVID_START, TOP_N_SHOCK_DAYS,
     UPLIFT_PERCENTILES, WC2026_NYC, PENN_CORRIDOR, OUT_NYC,
-    COPA_AMERICA_METLIFE_2024,
 )
 from utils import uplift_distribution, project_wc2026
+from data.event_catalog import COPA_AMERICA_2024
 
 
 def load_nyc_daily(sids: list = None) -> pd.DataFrame:
@@ -105,7 +105,7 @@ def copa_america_impact(corridor: pd.DataFrame) -> pd.DataFrame:
     highest-quality historical analog available.  Observed uplifts here
     directly inform the WC2026 projection scenarios.
     """
-    ca_dates = [date for date, _, _, _ in COPA_AMERICA_METLIFE_2024]
+    ca_dates = [ev["date"] for ev in COPA_AMERICA_2024]
     ca_df    = corridor[corridor["date"].isin(ca_dates)].copy()
 
     def weekday_median(row):
@@ -118,10 +118,7 @@ def copa_america_impact(corridor: pd.DataFrame) -> pd.DataFrame:
         ca_df["ridership_corridor"] / ca_df["baseline_wday"].clip(lower=1)
     )
 
-    match_info = {
-        date: (matchup, stage)
-        for date, _, matchup, stage in COPA_AMERICA_METLIFE_2024
-    }
+    match_info = {ev["date"]: (ev["match"], ev["stage"]) for ev in COPA_AMERICA_2024}
     ca_df["matchup"] = ca_df["date"].map(lambda d: match_info.get(d, ("", ""))[0])
     ca_df["stage"]   = ca_df["date"].map(lambda d: match_info.get(d, ("", ""))[1])
 
