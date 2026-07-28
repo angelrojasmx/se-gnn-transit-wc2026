@@ -1,0 +1,247 @@
+fecha,venue,sub_venue,riders,z_dow,event_name,event_category,year,month,dow
+2017-06-18,Azteca,Estadio Azteca,109308,2.690899691092768,Liga MX (Club América),soccer_domestic,2017,6,6
+2019-01-06,Azteca,Estadio Azteca,114965,3.023877632131174,Liga MX (Club América),soccer_domestic,2019,1,6
+2019-02-03,Azteca,Estadio Azteca,117508,3.173561723356323,Liga MX (Club América),soccer_domestic,2019,2,6
+2019-02-10,Azteca,Estadio Azteca,144490,4.761755254397207,Liga MX (Club América),soccer_domestic,2019,2,6
+2019-03-10,Azteca,Estadio Azteca,147099,4.915324186369844,Liga MX (Club América),soccer_domestic,2019,3,6
+2019-04-07,Azteca,Estadio Azteca,138458,4.40670435456626,Liga MX (Club América),soccer_domestic,2019,4,6
+2019-05-12,Azteca,Estadio Azteca,155585,5.414820528539177,Liga MX (Club América),soccer_domestic,2019,5,6
+2019-06-02,Azteca,Estadio Azteca,161520,5.764161889695787,Liga MX (Club América),soccer_domestic,2019,6,6
+2019-06-09,Azteca,Estadio Azteca,153972,5.319877375119528,Liga MX (Club América),soccer_domestic,2019,6,6
+2019-08-04,Azteca,Estadio Azteca,150492,5.115040317524751,Liga MX (Club América),soccer_domestic,2019,8,6
+2019-08-11,Azteca,Estadio Azteca,160929,5.729374906638743,Liga MX (Club América),soccer_domestic,2019,8,6
+2019-09-01,Azteca,Estadio Azteca,150825,5.134641104932528,Liga MX (Club América),soccer_domestic,2019,9,6
+2019-09-08,Azteca,Estadio Azteca,157854,5.54837664453991,Liga MX (Club América),soccer_domestic,2019,9,6
+2019-10-06,Azteca,Estadio Azteca,147902,4.962589748797604,Liga MX (Club América),soccer_domestic,2019,10,6
+2019-11-03,Azteca,Estadio Azteca,160194,5.686111907405363,Liga MX (Club América),soccer_domestic,2019,11,6
+2019-11-10,Azteca,Estadio Azteca,167612,6.12274446293354,Liga MX (Club América),soccer_domestic,2019,11,6
+2019-12-01,Azteca,Estadio Azteca,137210,4.333245547704685,Liga MX (Club América),soccer_domestic,2019,12,6
+2019-12-08,Azteca,Estadio Azteca,151458,5.171900259374336,Liga MX (Club América),soccer_domestic,2019,12,6
+2016-02-29,Ciudad Deportiva,Foro Sol / Palacio Deportes,9248,2.739519340622948,Concert/Event,concert,2016,2,0
+2016-03-01,Ciudad Deportiva,Autodromo / Foro Sol,13031,6.143110928056958,Spring Music Festival,music_festival,2016,3,1
+2016-03-02,Ciudad Deportiva,Autodromo / Foro Sol,12717,4.516772560968961,Spring Music Festival,music_festival,2016,3,2
+2016-03-15,Ciudad Deportiva,Autodromo / Foro Sol,10816,4.104915795395759,Spring Music Festival,music_festival,2016,3,1
+2016-04-17,Ciudad Deportiva,Autodromo / Foro Sol,11567,3.517077516448933,Spring Music Festival,music_festival,2016,4,6
+2016-04-18,Ciudad Deportiva,Autodromo / Foro Sol,10415,3.6721386727428373,Spring Music Festival,music_festival,2016,4,0
+2016-04-24,Ciudad Deportiva,Autodromo / Foro Sol,11511,3.4888582541921607,Spring Music Festival,music_festival,2016,4,6
+2016-04-25,Ciudad Deportiva,Autodromo / Foro Sol,11725,4.719037837333287,Spring Music Festival,music_festival,2016,4,0
+2016-04-26,Ciudad Deportiva,Autodromo / Foro Sol,9570,2.9583735221244933,Spring Music Festival,music_festival,2016,4,1
+2016-05-01,Ciudad Deportiva,Foro Sol / Palacio Deportes,10568,3.013666034404018,Concert/Event,concert,2016,5,6
+2016-08-25,Ciudad Deportiva,Foro Sol / Palacio Deportes,12512,3.4262438310688332,Concert/Event,concert,2016,8,3
+2016-08-26,Ciudad Deportiva,Foro Sol / Palacio Deportes,11289,2.5302930186014643,Concert/Event,concert,2016,8,4
+2016-08-27,Ciudad Deportiva,Foro Sol / Palacio Deportes,12083,2.7861333788559026,Concert/Event,concert,2016,8,5
+2016-10-18,Ciudad Deportiva,Foro Sol / Palacio Deportes,10194,3.5325648371495895,Concert/Event,concert,2016,10,1
+2016-10-28,Ciudad Deportiva,Autodromo Hermanos Rodriguez,20910,8.170689017666499,F1 Mexico GP,motorsport,2016,10,4
+2016-10-29,Ciudad Deportiva,Autodromo Hermanos Rodriguez,16009,4.725386928255473,F1 Mexico GP,motorsport,2016,10,5
+2016-10-30,Ciudad Deportiva,Autodromo Hermanos Rodriguez,12699,4.087509746353681,F1 Mexico GP,motorsport,2016,10,6
+2016-10-31,Ciudad Deportiva,Foro Sol / Palacio Deportes,12498,5.336788260408415,Concert/Event,concert,2016,10,0
+2016-11-11,Ciudad Deportiva,Foro Sol / Palacio Deportes,11351,2.566641064744488,Concert/Event,concert,2016,11,4
+2017-02-17,Ciudad Deportiva,Foro Sol / Palacio Deportes,12738,3.379782032492457,Concert/Event,concert,2017,2,4
+2017-02-19,Ciudad Deportiva,Foro Sol / Palacio Deportes,11309,3.3870673439088046,Concert/Event,concert,2017,2,6
+2017-02-20,Ciudad Deportiva,Foro Sol / Palacio Deportes,15092,7.409808438231032,Concert/Event,concert,2017,2,0
+2017-02-21,Ciudad Deportiva,Foro Sol / Palacio Deportes,9477,2.872796931904407,Concert/Event,concert,2017,2,1
+2017-02-22,Ciudad Deportiva,Foro Sol / Palacio Deportes,12480,4.339746747019954,Concert/Event,concert,2017,2,2
+2017-02-26,Ciudad Deportiva,Foro Sol / Palacio Deportes,9802,2.627666839963172,Concert/Event,concert,2017,2,6
+2017-02-27,Ciudad Deportiva,Foro Sol / Palacio Deportes,10346,3.616996655676623,Concert/Event,concert,2017,2,0
+2017-03-01,Ciudad Deportiva,Autodromo / Foro Sol,10154,2.6023541594866644,Spring Music Festival,music_festival,2017,3,2
+2017-03-05,Ciudad Deportiva,Autodromo / Foro Sol,11624,3.5458006941031472,Spring Music Festival,music_festival,2017,3,6
+2017-03-19,Ciudad Deportiva,Foro Aztlan / Autodromo,13063,4.270934951022699,Vive Latino,music_festival,2017,3,6
+2017-05-16,Ciudad Deportiva,Foro Sol / Palacio Deportes,11359,4.604572660874328,Concert/Event,concert,2017,5,1
+2017-05-17,Ciudad Deportiva,Foro Sol / Palacio Deportes,11743,3.7892487517439286,Concert/Event,concert,2017,5,2
+2017-05-18,Ciudad Deportiva,Foro Sol / Palacio Deportes,12606,3.4830557767595143,Concert/Event,concert,2017,5,3
+2017-08-25,Ciudad Deportiva,Foro Sol / Palacio Deportes,13628,3.901552372287476,Concert/Event,concert,2017,8,4
+2017-08-26,Ciudad Deportiva,Foro Sol / Palacio Deportes,13563,3.5171815839275693,Concert/Event,concert,2017,8,5
+2017-10-27,Ciudad Deportiva,Autodromo Hermanos Rodriguez,14693,4.525918003615224,F1 Mexico GP,motorsport,2017,10,4
+2017-10-28,Ciudad Deportiva,Autodromo Hermanos Rodriguez,14561,4.010145170861032,F1 Mexico GP,motorsport,2017,10,5
+2017-10-29,Ciudad Deportiva,Autodromo Hermanos Rodriguez,13660,4.571772443295787,F1 Mexico GP,motorsport,2017,10,6
+2017-11-12,Ciudad Deportiva,Foro Sol / Palacio Deportes,10144,2.8000059058884585,Concert/Event,concert,2017,11,6
+2018-02-03,Ciudad Deportiva,Foro Sol / Palacio Deportes,12023,2.7564962894611056,Concert/Event,concert,2018,2,5
+2018-02-27,Ciudad Deportiva,Foro Sol / Palacio Deportes,9462,2.8589942560624575,Concert/Event,concert,2018,2,1
+2018-03-03,Ciudad Deportiva,Autodromo / Foro Sol,11612,2.553482227106744,Spring Music Festival,music_festival,2018,3,5
+2018-03-12,Ciudad Deportiva,Autodromo / Foro Sol,10069,3.3956294277441383,Spring Music Festival,music_festival,2018,3,0
+2018-03-13,Ciudad Deportiva,Autodromo / Foro Sol,11941,5.1401164835419655,Spring Music Festival,music_festival,2018,3,1
+2018-03-15,Ciudad Deportiva,Autodromo / Foro Sol,12646,3.507231072798102,Spring Music Festival,music_festival,2018,3,3
+2018-03-18,Ciudad Deportiva,Foro Aztlan / Autodromo,9875,2.6644526639764643,Vive Latino,music_festival,2018,3,6
+2018-07-27,Ciudad Deportiva,Foro Sol / Palacio Deportes,12597,3.2971195404575155,Concert/Event,concert,2018,7,4
+2018-08-23,Ciudad Deportiva,Foro Sol / Palacio Deportes,12773,3.5839876377206177,Concert/Event,concert,2018,8,3
+2018-08-24,Ciudad Deportiva,Foro Sol / Palacio Deportes,15344,4.9075724881169736,Concert/Event,concert,2018,8,4
+2018-08-25,Ciudad Deportiva,Foro Sol / Palacio Deportes,12115,2.801939826533128,Concert/Event,concert,2018,8,5
+2018-10-26,Ciudad Deportiva,Autodromo Hermanos Rodriguez,14174,4.2216496818695886,F1 Mexico GP,motorsport,2018,10,4
+2018-10-27,Ciudad Deportiva,Autodromo Hermanos Rodriguez,18408,5.910376552557452,F1 Mexico GP,motorsport,2018,10,5
+2018-10-28,Ciudad Deportiva,Autodromo Hermanos Rodriguez,14777,5.134645942238899,F1 Mexico GP,motorsport,2018,10,6
+2018-11-06,Ciudad Deportiva,Foro Sol / Palacio Deportes,9479,2.8746372886833336,Concert/Event,concert,2018,11,1
+2018-11-09,Ciudad Deportiva,Foro Sol / Palacio Deportes,12691,3.3522278684808096,Concert/Event,concert,2018,11,4
+2018-11-25,Ciudad Deportiva,Foro Sol / Palacio Deportes,10021,2.7380243120030485,Concert/Event,concert,2018,11,6
+2018-12-20,Ciudad Deportiva,Foro Sol / Palacio Deportes,11853,3.027955828833102,Concert/Event,concert,2018,12,3
+2018-12-21,Ciudad Deportiva,Foro Sol / Palacio Deportes,14021,4.131952084129546,Concert/Event,concert,2018,12,4
+2019-01-24,Ciudad Deportiva,Foro Sol / Palacio Deportes,12931,3.679480057073039,Concert/Event,concert,2019,1,3
+2019-02-05,Ciudad Deportiva,Foro Sol / Palacio Deportes,11348,4.594450698590232,Concert/Event,concert,2019,2,1
+2019-02-24,Ciudad Deportiva,Foro Sol / Palacio Deportes,14222,4.854972896658391,Concert/Event,concert,2019,2,6
+2019-03-04,Ciudad Deportiva,Autodromo / Foro Sol,9922,3.2781529566030727,Spring Music Festival,music_festival,2019,3,0
+2019-03-05,Ciudad Deportiva,Autodromo / Foro Sol,10597,3.9033967281032975,Spring Music Festival,music_festival,2019,3,1
+2019-03-10,Ciudad Deportiva,Autodromo / Foro Sol,12751,4.113713347020684,Spring Music Festival,music_festival,2019,3,6
+2019-03-17,Ciudad Deportiva,Foro Aztlan / Autodromo,23125,9.341331680087698,Vive Latino,music_festival,2019,3,6
+2019-03-18,Ciudad Deportiva,Autodromo / Foro Sol,18322,9.991094164663973,Spring Music Festival,music_festival,2019,3,0
+2019-03-24,Ciudad Deportiva,Autodromo / Foro Sol,11471,3.4687016382944664,Spring Music Festival,music_festival,2019,3,6
+2019-03-25,Ciudad Deportiva,Autodromo / Foro Sol,14367,6.8304176792019655,Spring Music Festival,music_festival,2019,3,0
+2019-04-04,Ciudad Deportiva,Autodromo / Foro Sol,27993,12.782687780403215,Spring Music Festival,music_festival,2019,4,3
+2019-04-10,Ciudad Deportiva,Autodromo / Foro Sol,11270,3.4359440682085696,Spring Music Festival,music_festival,2019,4,2
+2019-04-12,Ciudad Deportiva,Autodromo / Foro Sol,14626,4.4866386634284074,Spring Music Festival,music_festival,2019,4,4
+2019-04-30,Ciudad Deportiva,Autodromo / Foro Sol,9417,2.817586228536609,Spring Music Festival,music_festival,2019,4,1
+2019-05-05,Ciudad Deportiva,Foro Sol / Palacio Deportes,12707,4.09154106953322,Concert/Event,concert,2019,5,6
+2019-05-12,Ciudad Deportiva,Foro Sol / Palacio Deportes,18548,7.034910905994029,Concert/Event,concert,2019,5,6
+2019-06-05,Ciudad Deportiva,Foro Sol / Palacio Deportes,11953,3.9461070679012766,Concert/Event,concert,2019,6,2
+2019-07-05,Ciudad Deportiva,Foro Sol / Palacio Deportes,12232,3.0831350752606816,Concert/Event,concert,2019,7,4
+2019-07-09,Ciudad Deportiva,Foro Sol / Palacio Deportes,9355,2.760535168389885,Concert/Event,concert,2019,7,1
+2019-08-06,Ciudad Deportiva,Foro Sol / Palacio Deportes,9961,3.3181632724046417,Concert/Event,concert,2019,8,1
+2019-08-11,Ciudad Deportiva,Foro Sol / Palacio Deportes,10191,2.823689929568249,Concert/Event,concert,2019,8,6
+2019-08-23,Ciudad Deportiva,Foro Sol / Palacio Deportes,11400,2.595367746373652,Concert/Event,concert,2019,8,4
+2019-09-10,Ciudad Deportiva,Foro Sol / Palacio Deportes,9683,3.0623536801338456,Concert/Event,concert,2019,9,1
+2019-10-25,Ciudad Deportiva,Autodromo Hermanos Rodriguez,17054,5.910075051093921,F1 Mexico GP,motorsport,2019,10,4
+2019-10-26,Ciudad Deportiva,Autodromo Hermanos Rodriguez,16418,4.927413087630008,F1 Mexico GP,motorsport,2019,10,5
+2019-10-27,Ciudad Deportiva,Autodromo Hermanos Rodriguez,15615,5.556927045295595,F1 Mexico GP,motorsport,2019,10,6
+2019-11-13,Ciudad Deportiva,Foro Sol / Palacio Deportes,12437,4.30762813942583,Concert/Event,concert,2019,11,2
+2019-11-14,Ciudad Deportiva,Foro Sol / Palacio Deportes,17561,6.4777705735395585,Concert/Event,concert,2019,11,3
+2022-02-12,Ciudad Deportiva,Foro Sol / Palacio Deportes,16514,4.974832430661683,Concert/Event,concert,2022,2,5
+2022-02-24,Ciudad Deportiva,Foro Sol / Palacio Deportes,11031,2.531153495240126,Concert/Event,concert,2022,2,3
+2022-02-25,Ciudad Deportiva,Foro Sol / Palacio Deportes,11792,2.825181199406964,Concert/Event,concert,2022,2,4
+2022-03-03,Ciudad Deportiva,Autodromo / Foro Sol,11438,2.777137132432755,Spring Music Festival,music_festival,2022,3,3
+2022-03-04,Ciudad Deportiva,Autodromo / Foro Sol,12875,3.460099489292364,Spring Music Festival,music_festival,2022,3,4
+2022-03-18,Ciudad Deportiva,Foro Aztlan / Autodromo,11610,2.7184820962129264,Vive Latino,music_festival,2022,3,4
+2022-03-26,Ciudad Deportiva,Autodromo / Foro Sol,12810,3.145236112022863,Spring Music Festival,music_festival,2022,3,5
+2022-03-31,Ciudad Deportiva,Autodromo / Foro Sol,12333,3.3180593812961536,Spring Music Festival,music_festival,2022,3,3
+2022-04-04,Ciudad Deportiva,Autodromo / Foro Sol,9056,2.586080684438699,Spring Music Festival,music_festival,2022,4,0
+2022-04-05,Ciudad Deportiva,Autodromo / Foro Sol,10545,3.855547451851206,Spring Music Festival,music_festival,2022,4,1
+2022-04-06,Ciudad Deportiva,Autodromo / Foro Sol,10050,2.5246719457706446,Spring Music Festival,music_festival,2022,4,2
+2022-04-07,Ciudad Deportiva,Autodromo / Foro Sol,11428,2.7710933084231084,Spring Music Festival,music_festival,2022,4,3
+2022-04-08,Ciudad Deportiva,Autodromo / Foro Sol,17925,6.42070647352253,Spring Music Festival,music_festival,2022,4,4
+2022-05-21,Ciudad Deportiva,Foro Sol / Palacio Deportes,11918,2.7046313830202102,Concert/Event,concert,2022,5,5
+2022-05-25,Ciudad Deportiva,Foro Sol / Palacio Deportes,11867,3.8818698527130295,Concert/Event,concert,2022,5,2
+2022-05-26,Ciudad Deportiva,Foro Sol / Palacio Deportes,20017,7.96213375030884,Concert/Event,concert,2022,5,3
+2022-05-27,Ciudad Deportiva,Foro Sol / Palacio Deportes,22670,9.20250452108137,Concert/Event,concert,2022,5,4
+2022-09-21,Ciudad Deportiva,Foro Sol / Palacio Deportes,13853,5.365301356943947,Concert/Event,concert,2022,9,2
+2022-10-01,Ciudad Deportiva,Foro Sol / Palacio Deportes,11755,2.624117290164344,Concert/Event,concert,2022,10,5
+2022-10-02,Ciudad Deportiva,Foro Sol / Palacio Deportes,13377,4.4291643858195995,Concert/Event,concert,2022,10,6
+2022-10-03,Ciudad Deportiva,Foro Sol / Palacio Deportes,12957,5.703602547848886,Concert/Event,concert,2022,10,0
+2022-10-04,Ciudad Deportiva,Foro Sol / Palacio Deportes,10374,3.6981969472529825,Concert/Event,concert,2022,10,1
+2022-10-05,Ciudad Deportiva,Foro Sol / Palacio Deportes,13408,5.0329111155629,Concert/Event,concert,2022,10,2
+2022-10-28,Ciudad Deportiva,Autodromo Hermanos Rodriguez,14137,4.199958105945527,F1 Mexico GP,motorsport,2022,10,4
+2022-10-29,Ciudad Deportiva,Autodromo Hermanos Rodriguez,24667,9.002018927924723,F1 Mexico GP,motorsport,2022,10,5
+2022-10-30,Ciudad Deportiva,Autodromo Hermanos Rodriguez,16345,5.924785285428516,F1 Mexico GP,motorsport,2022,10,6
+2022-11-20,Ciudad Deportiva,Autodromo Hermanos Rodriguez,9719,2.5858418619754566,Corona Capital,music_festival,2022,11,6
+2022-11-24,Ciudad Deportiva,Foro Sol / Palacio Deportes,11738,2.9584518527221624,Concert/Event,concert,2022,11,3
+2022-11-25,Ciudad Deportiva,Foro Sol / Palacio Deportes,20420,7.883422201374859,Concert/Event,concert,2022,11,4
+2022-11-26,Ciudad Deportiva,Foro Sol / Palacio Deportes,16094,4.767372804898102,Concert/Event,concert,2022,11,5
+2022-11-30,Ciudad Deportiva,Foro Sol / Palacio Deportes,10913,3.169284930741078,Concert/Event,concert,2022,11,2
+2022-12-04,Ciudad Deportiva,Foro Sol / Palacio Deportes,10104,2.779849289990764,Concert/Event,concert,2022,12,6
+2022-12-07,Ciudad Deportiva,Foro Sol / Palacio Deportes,10403,2.7883433057875195,Concert/Event,concert,2022,12,2
+2023-01-23,Ciudad Deportiva,Foro Sol / Palacio Deportes,12585,5.406315151491904,Concert/Event,concert,2023,1,0
+2023-01-24,Ciudad Deportiva,Foro Sol / Palacio Deportes,12179,5.35911894023423,Concert/Event,concert,2023,1,1
+2023-02-26,Ciudad Deportiva,Foro Sol / Palacio Deportes,9919,2.686624941463928,Concert/Event,concert,2023,2,6
+2023-03-18,Ciudad Deportiva,Foro Aztlan / Autodromo,13200,3.337877193089046,Vive Latino,music_festival,2023,3,5
+2023-03-19,Ciudad Deportiva,Foro Aztlan / Autodromo,10561,3.0101386266219214,Vive Latino,music_festival,2023,3,6
+2023-03-20,Ciudad Deportiva,Autodromo / Foro Sol,11146,4.256324389777661,Spring Music Festival,music_festival,2023,3,0
+2023-03-26,Ciudad Deportiva,Autodromo / Foro Sol,11110,3.2867881798177754,Spring Music Festival,music_festival,2023,3,6
+2023-03-29,Ciudad Deportiva,Autodromo / Foro Sol,14047,5.510208563298829,Spring Music Festival,music_festival,2023,3,2
+2023-03-30,Ciudad Deportiva,Autodromo / Foro Sol,15172,5.0339010176349115,Spring Music Festival,music_festival,2023,3,3
+2023-03-31,Ciudad Deportiva,Autodromo / Foro Sol,25741,11.002905322778565,Spring Music Festival,music_festival,2023,3,4
+2023-04-26,Ciudad Deportiva,Autodromo / Foro Sol,17469,8.066252172300944,Spring Music Festival,music_festival,2023,4,2
+2023-04-27,Ciudad Deportiva,Autodromo / Foro Sol,20545,8.281247658018197,Spring Music Festival,music_festival,2023,4,3
+2023-05-08,Ciudad Deportiva,Foro Sol / Palacio Deportes,9954,3.303726065967114,Concert/Event,concert,2023,5,0
+2023-08-07,Ciudad Deportiva,Foro Sol / Palacio Deportes,9850,3.2206134605339796,Concert/Event,concert,2023,8,0
+2023-08-15,Ciudad Deportiva,Foro Sol / Palacio Deportes,11093,4.359805209277091,Concert/Event,concert,2023,8,1
+2023-08-16,Ciudad Deportiva,Foro Sol / Palacio Deportes,17020,7.730874153469281,Concert/Event,concert,2023,8,2
+2023-08-17,Ciudad Deportiva,Foro Sol / Palacio Deportes,14144,4.412595909443209,Concert/Event,concert,2023,8,3
+2023-08-24,Ciudad Deportiva,Foro Sol / Palacio Deportes,11566,2.854498079756236,Concert/Event,concert,2023,8,3
+2023-08-25,Ciudad Deportiva,Foro Sol / Palacio Deportes,20494,7.926805353222985,Concert/Event,concert,2023,8,4
+2023-08-26,Ciudad Deportiva,Foro Sol / Palacio Deportes,21472,7.423843917651767,Concert/Event,concert,2023,8,5
+2023-08-27,Ciudad Deportiva,Foro Sol / Palacio Deportes,20444,7.990334499544739,Concert/Event,concert,2023,8,6
+2023-08-28,Ciudad Deportiva,Foro Sol / Palacio Deportes,18497,10.130947106498574,Concert/Event,concert,2023,8,0
+2023-09-05,Ciudad Deportiva,Foro Sol / Palacio Deportes,10249,3.5831746485700706,Concert/Event,concert,2023,9,1
+2023-09-06,Ciudad Deportiva,Foro Sol / Palacio Deportes,10607,2.940719955768943,Concert/Event,concert,2023,9,2
+2023-09-11,Ciudad Deportiva,Foro Sol / Palacio Deportes,10425,3.6801302694191005,Concert/Event,concert,2023,9,0
+2023-09-25,Ciudad Deportiva,Foro Sol / Palacio Deportes,9836,3.209425225187211,Concert/Event,concert,2023,9,0
+2023-09-30,Ciudad Deportiva,Foro Sol / Palacio Deportes,16163,4.801455457702119,Concert/Event,concert,2023,9,5
+2023-10-01,Ciudad Deportiva,Foro Sol / Palacio Deportes,10029,2.742055635182587,Concert/Event,concert,2023,10,6
+2023-10-06,Ciudad Deportiva,Foro Sol / Palacio Deportes,11818,2.8404239284346837,Concert/Event,concert,2023,10,4
+2023-10-07,Ciudad Deportiva,Foro Sol / Palacio Deportes,17422,5.423340383502949,Concert/Event,concert,2023,10,5
+2023-10-18,Ciudad Deportiva,Foro Sol / Palacio Deportes,10775,3.066206608694821,Concert/Event,concert,2023,10,2
+2023-10-25,Ciudad Deportiva,Foro Sol / Palacio Deportes,11334,3.4837485074184276,Concert/Event,concert,2023,10,2
+2023-10-26,Ciudad Deportiva,Foro Sol / Palacio Deportes,11239,2.6568650346407816,Concert/Event,concert,2023,10,3
+2023-10-27,Ciudad Deportiva,Autodromo Hermanos Rodriguez,15562,5.035376908426316,F1 Mexico GP,motorsport,2023,10,4
+2023-10-28,Ciudad Deportiva,Autodromo Hermanos Rodriguez,36865,15.027239201887014,F1 Mexico GP,motorsport,2023,10,5
+2023-10-29,Ciudad Deportiva,Autodromo Hermanos Rodriguez,12677,4.076423607609949,F1 Mexico GP,motorsport,2023,10,6
+2023-11-06,Ciudad Deportiva,Foro Sol / Palacio Deportes,9048,2.5796874070976887,Concert/Event,concert,2023,11,0
+2023-12-02,Ciudad Deportiva,Foro Sol / Palacio Deportes,12806,3.14326030606321,Concert/Event,concert,2023,12,5
+2023-12-03,Ciudad Deportiva,Foro Sol / Palacio Deportes,11267,3.3659028972162255,Concert/Event,concert,2023,12,6
+2023-12-04,Ciudad Deportiva,Foro Sol / Palacio Deportes,11657,4.6646949799346995,Concert/Event,concert,2023,12,0
+2023-12-06,Ciudad Deportiva,Foro Sol / Palacio Deportes,11983,3.9685153987808977,Concert/Event,concert,2023,12,2
+2024-10-06,Ciudad Deportiva,Foro Sol / Palacio Deportes,10672,3.066073235738023,Concert/Event,concert,2024,10,6
+2024-10-25,Ciudad Deportiva,Autodromo Hermanos Rodriguez,17034,5.898349874918752,F1 Mexico GP,motorsport,2024,10,4
+2024-10-26,Ciudad Deportiva,Autodromo Hermanos Rodriguez,16327,4.882463502047898,F1 Mexico GP,motorsport,2024,10,5
+2024-10-27,Ciudad Deportiva,Autodromo Hermanos Rodriguez,15939,5.7201956340669184,F1 Mexico GP,motorsport,2024,10,6
+2024-11-20,Ciudad Deportiva,Foro Sol / Palacio Deportes,12046,4.015572893628102,Concert/Event,concert,2024,11,2
+2024-12-01,Ciudad Deportiva,Foro Sol / Palacio Deportes,11058,3.260584579150773,Concert/Event,concert,2024,12,6
+2024-12-14,Ciudad Deportiva,Foro Sol / Palacio Deportes,16516,4.97582033364151,Concert/Event,concert,2024,12,5
+2024-12-15,Ciudad Deportiva,Foro Sol / Palacio Deportes,15942,5.721707380259246,Concert/Event,concert,2024,12,6
+2025-01-11,Ciudad Deportiva,Foro Sol / Palacio Deportes,13325,3.399621129328207,Concert/Event,concert,2025,1,5
+2025-02-20,Ciudad Deportiva,Foro Sol / Palacio Deportes,12568,3.4600892455228562,Concert/Event,concert,2025,2,3
+2025-04-02,Ciudad Deportiva,Autodromo / Foro Sol,13834,5.35110941405352,Spring Music Festival,music_festival,2025,4,2
+2025-04-03,Ciudad Deportiva,Autodromo / Foro Sol,14434,4.587866805722969,Spring Music Festival,music_festival,2025,4,3
+2025-04-12,Ciudad Deportiva,Autodromo / Foro Sol,21023,7.2020596986807,Spring Music Festival,music_festival,2025,4,5
+2025-04-13,Ciudad Deportiva,Autodromo / Foro Sol,17663,6.588945779257543,Spring Music Festival,music_festival,2025,4,6
+2025-04-26,Ciudad Deportiva,Autodromo / Foro Sol,12426,2.9555587398961607,Spring Music Festival,music_festival,2025,4,5
+2025-04-27,Ciudad Deportiva,Autodromo / Foro Sol,10595,3.0272717501349615,Spring Music Festival,music_festival,2025,4,6
+2025-09-07,Ciudad Deportiva,Foro Sol / Palacio Deportes,13194,4.336947868087648,Concert/Event,concert,2025,9,6
+2025-09-12,Ciudad Deportiva,Foro Sol / Palacio Deportes,12719,3.368643115126046,Concert/Event,concert,2025,9,4
+2025-09-13,Ciudad Deportiva,Foro Sol / Palacio Deportes,13308,3.391223953999681,Concert/Event,concert,2025,9,5
+2025-09-23,Ciudad Deportiva,Foro Sol / Palacio Deportes,12211,5.388564648697056,Concert/Event,concert,2025,9,1
+2025-09-28,Ciudad Deportiva,Foro Sol / Palacio Deportes,10460,2.959243171480243,Concert/Event,concert,2025,9,6
+2025-10-24,Ciudad Deportiva,Autodromo Hermanos Rodriguez,19142,7.134183443781562,F1 Mexico GP,motorsport,2025,10,4
+2025-10-25,Ciudad Deportiva,Autodromo Hermanos Rodriguez,18379,5.896051959349966,F1 Mexico GP,motorsport,2025,10,5
+2025-10-26,Ciudad Deportiva,Autodromo Hermanos Rodriguez,17614,6.564253924782867,F1 Mexico GP,motorsport,2025,10,6
+2025-11-06,Ciudad Deportiva,Foro Sol / Palacio Deportes,12967,3.7012378235077676,Concert/Event,concert,2025,11,3
+2025-11-15,Ciudad Deportiva,Autodromo Hermanos Rodriguez,13073,3.2751453538700583,Corona Capital,music_festival,2025,11,5
+2025-12-01,Ciudad Deportiva,Foro Sol / Palacio Deportes,11654,4.66229750093182,Concert/Event,concert,2025,12,0
+2025-12-02,Ciudad Deportiva,Foro Sol / Palacio Deportes,11445,4.683708002368172,Concert/Event,concert,2025,12,1
+2025-12-05,Ciudad Deportiva,Foro Sol / Palacio Deportes,11470,2.6364058629867437,Concert/Event,concert,2025,12,4
+2025-12-09,Ciudad Deportiva,Foro Sol / Palacio Deportes,30253,21.990423151393824,Concert/Event,concert,2025,12,1
+2025-12-12,Ciudad Deportiva,Foro Sol / Palacio Deportes,24243,10.124689627258409,Concert/Event,concert,2025,12,4
+2025-12-13,Ciudad Deportiva,Foro Sol / Palacio Deportes,32353,12.798530079398256,Concert/Event,concert,2025,12,5
+2025-12-14,Ciudad Deportiva,Foro Sol / Palacio Deportes,26296,10.939247405377413,Concert/Event,concert,2025,12,6
+2025-12-15,Ciudad Deportiva,Foro Sol / Palacio Deportes,10601,3.8207823709213287,Concert/Event,concert,2025,12,0
+2025-12-16,Ciudad Deportiva,Foro Sol / Palacio Deportes,12174,5.354518048286914,Concert/Event,concert,2025,12,1
+2025-12-17,Ciudad Deportiva,Foro Sol / Palacio Deportes,10757,3.0527616101670487,Concert/Event,concert,2025,12,2
+2025-12-19,Ciudad Deportiva,Foro Sol / Palacio Deportes,11973,2.9312940437922435,Concert/Event,concert,2025,12,4
+2025-12-20,Ciudad Deportiva,Foro Sol / Palacio Deportes,14150,3.8071311085066695,Concert/Event,concert,2025,12,5
+2025-12-21,Ciudad Deportiva,Foro Sol / Palacio Deportes,14901,5.197131451521752,Concert/Event,concert,2025,12,6
+2016-10-09,Pumas/CU,Estadio Olimpico Universitario,75183,2.8772203169120454,Liga MX (Pumas UNAM),soccer_domestic,2016,10,6
+2016-10-23,Pumas/CU,Estadio Olimpico Universitario,74358,2.810754134808821,Liga MX (Pumas UNAM),soccer_domestic,2016,10,6
+2017-10-01,Pumas/CU,Estadio Olimpico Universitario,78567,3.1498525111390876,Liga MX (Pumas UNAM),soccer_domestic,2017,10,6
+2017-11-26,Pumas/CU,Estadio Olimpico Universitario,71551,2.584607985519428,Liga MX (Pumas UNAM),soccer_domestic,2017,11,6
+2019-01-06,Pumas/CU,Estadio Olimpico Universitario,82271,3.448265527515259,Liga MX (Pumas UNAM),soccer_domestic,2019,1,6
+2019-02-03,Pumas/CU,Estadio Olimpico Universitario,88149,3.921827004367078,Liga MX (Pumas UNAM),soccer_domestic,2019,2,6
+2019-02-09,Pumas/CU,Estadio Olimpico Universitario,132974,2.500119372501707,Liga MX (Pumas UNAM),soccer_domestic,2019,2,5
+2019-02-10,Pumas/CU,Estadio Olimpico Universitario,127785,7.115104087813605,Liga MX (Pumas UNAM),soccer_domestic,2019,2,6
+2019-03-09,Pumas/CU,Estadio Olimpico Universitario,161579,3.648286962053481,Liga MX (Pumas UNAM),soccer_domestic,2019,3,5
+2019-03-10,Pumas/CU,Estadio Olimpico Universitario,148209,8.760565061481783,Liga MX (Pumas UNAM),soccer_domestic,2019,3,6
+2019-04-07,Pumas/CU,Estadio Olimpico Universitario,96079,4.5607080032501885,Liga MX (Pumas UNAM),soccer_domestic,2019,4,6
+2019-05-04,Pumas/CU,Estadio Olimpico Universitario,143100,2.906563875623583,Liga MX (Pumas UNAM),soccer_domestic,2019,5,5
+2019-05-11,Pumas/CU,Estadio Olimpico Universitario,163073,3.708254183825561,Liga MX (Pumas UNAM),soccer_domestic,2019,5,5
+2019-05-12,Pumas/CU,Estadio Olimpico Universitario,134690,7.671405890750286,Liga MX (Pumas UNAM),soccer_domestic,2019,5,6
+2019-06-02,Pumas/CU,Estadio Olimpico Universitario,141193,8.195320535862123,Liga MX (Pumas UNAM),soccer_domestic,2019,6,6
+2019-06-08,Pumas/CU,Estadio Olimpico Universitario,160586,3.6084292303134036,Liga MX (Pumas UNAM),soccer_domestic,2019,6,5
+2019-06-09,Pumas/CU,Estadio Olimpico Universitario,170056,10.520670128644369,Liga MX (Pumas UNAM),soccer_domestic,2019,6,6
+2019-08-03,Pumas/CU,Estadio Olimpico Universitario,138537,2.7234109753919893,Liga MX (Pumas UNAM),soccer_domestic,2019,8,5
+2019-08-04,Pumas/CU,Estadio Olimpico Universitario,138173,7.9520140268297155,Liga MX (Pumas UNAM),soccer_domestic,2019,8,6
+2019-08-10,Pumas/CU,Estadio Olimpico Universitario,148315,3.115887209988642,Liga MX (Pumas UNAM),soccer_domestic,2019,8,5
+2019-08-11,Pumas/CU,Estadio Olimpico Universitario,159497,9.669983562792318,Liga MX (Pumas UNAM),soccer_domestic,2019,8,6
+2019-09-01,Pumas/CU,Estadio Olimpico Universitario,118517,6.3684270263194485,Liga MX (Pumas UNAM),soccer_domestic,2019,9,6
+2019-09-08,Pumas/CU,Estadio Olimpico Universitario,152742,9.125766520238042,Liga MX (Pumas UNAM),soccer_domestic,2019,9,6
+2019-10-06,Pumas/CU,Estadio Olimpico Universitario,117352,6.274568720682774,Liga MX (Pumas UNAM),soccer_domestic,2019,10,6
+2019-11-02,Pumas/CU,Estadio Olimpico Universitario,149264,3.153978838811737,Liga MX (Pumas UNAM),soccer_domestic,2019,11,5
+2019-11-03,Pumas/CU,Estadio Olimpico Universitario,129486,7.252145270550071,Liga MX (Pumas UNAM),soccer_domestic,2019,11,6
+2019-11-09,Pumas/CU,Estadio Olimpico Universitario,156368,3.4391241824990573,Liga MX (Pumas UNAM),soccer_domestic,2019,11,5
+2019-11-10,Pumas/CU,Estadio Olimpico Universitario,162401,9.903944523795667,Liga MX (Pumas UNAM),soccer_domestic,2019,11,6
+2019-12-01,Pumas/CU,Estadio Olimpico Universitario,85905,3.741038989046309,Liga MX (Pumas UNAM),soccer_domestic,2019,12,6
+2019-12-08,Pumas/CU,Estadio Olimpico Universitario,140773,8.16148320679139,Liga MX (Pumas UNAM),soccer_domestic,2019,12,6
