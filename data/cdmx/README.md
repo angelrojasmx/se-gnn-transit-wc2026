@@ -2,6 +2,46 @@
 
 This directory should contain the following files before running any Tier 1 or Tier 2b CDMX scripts.
 
+## Data source and licensing
+
+Ridership figures in this section originate from SEMOVI's open-data portal, not from this
+project. CDMX's official open-data policy states that published data must be reusable and
+redistributable by anyone, without restriction, provided the source is credited (see
+[Política de Datos Abiertos, CDMX](https://politicadedatos.cdmx.gob.mx/datos_abiertos/)).
+Source: Secretaría de Movilidad del Gobierno de la Ciudad de México (SEMOVI), via
+https://datos.cdmx.gob.mx/dataset/afluencia-diaria-del-metro-cdmx.
+
+**`metro/daily_totals.parquet` - regeneration script now available, verified.**
+`src/demand/build_cdmx_dataset.py` rebuilds this file from the raw SEMOVI
+`afluenciastc_*.csv`. Verified 2026-08-04: every one of the 545,438 rows in the
+currently committed file matches this script's output exactly (same `riders`,
+`is_event`, `event_category`) - zero discrepancies. One caveat: a fresh SEMOVI
+export is more complete than whatever export originally produced this file (it
+additionally covers 2020-2021, which the script excludes by default to match,
+plus roughly 25,000 scattered per-station-day rows elsewhere whose absence
+from the committed file isn't explained by any window/filter tried). Because
+of that residual gap, `daily_totals.parquet` stays committed as the exact,
+authoritative file behind Table 13 and the WC2026 validation - do not
+regenerate-and-replace it without re-running those results and confirming the
+extra rows don't change them. See the script's docstring for full detail.
+
+**`metro/baseline_daily.parquet` - known gap, NOT resolved.** This file
+(median expected ridership by station x day-of-week) could not be
+reproduced from the current raw SEMOVI export. Its values don't match any
+median or mean computed over any window tried (full history, pre/post-COVID,
+2020-2021 excluded, event days excluded, zero-ridership days excluded,
+trailing 4/8/12/13/26/52/104-week windows) - and at least one value (sid=1,
+dow=0: 12297 riders) isn't even a real observed daily total in the current
+raw file for that station and weekday. This means it was most likely built
+from an older/different vintage of the SEMOVI export that is no longer
+available (confirmed with the project owner: no earlier export is saved
+anywhere). It remains committed as-is since there is no way to regenerate it
+today; treat it as a fixed input, not a reproducible artifact.
+
+**`metro/event_labels.csv` - not used by the current Tier 2b pipeline.**
+`cdmx_gnn_loto.py` does not read this file (verified by search); it appears
+to be an artifact of Tier 1 shock-detection work. Not investigated further.
+
 ## Required files
 
 ### 1. STC Metro daily ridership
@@ -11,6 +51,12 @@ Source: Secretaría de Movilidad del Gobierno de la Ciudad de México (SEMOVI)
 Portal: https://datos.cdmx.gob.mx/dataset/afluencia-diaria-del-metro-cdmx  
 Coverage: 2010–2025 (use 2022–2025 for this paper)  
 Columns expected: `fecha`, `linea`, `estacion`, `afluencia`
+
+To rebuild `metro/daily_totals.parquet` from this file:
+```bash
+python src/demand/build_cdmx_dataset.py --input data/cdmx/afluencia/afluenciastc_simple_12_2025.csv
+```
+See the script's docstring and the note above for what is and isn't verified about this step.
 
 ### 2. Other transit modes (Tier 1 only)
 **Files:** `afluencia/afluenciamb_simple_12_2025.csv` (Metrobús),  
