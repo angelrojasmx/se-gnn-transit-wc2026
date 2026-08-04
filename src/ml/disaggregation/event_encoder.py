@@ -70,7 +70,7 @@ class EventEncoder:
         Load the sentence-transformers model, preferring the local copy.
 
         Search order:
-          1. _LOCAL_MODEL_DIR (inside the project) — no internet required
+          1. _LOCAL_MODEL_DIR (inside the project), no internet required
           2. HuggingFace cache (~/.cache/huggingface/)
           3. Download from HuggingFace Hub (first run only)
 

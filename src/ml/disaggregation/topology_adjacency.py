@@ -1,12 +1,12 @@
 """
-ml/disaggregation/topology_adjacency.py — I3 (Reviewer 2.1) sensitivity analysis
+ml/disaggregation/topology_adjacency.py - I3 (Reviewer 2.1) sensitivity analysis
 
 Builds a track/line-topology adjacency for the Manhattan station graph from the
 NYC subway GTFS feed (legacy/gtfsNYC/gtfs_feeds/gtfs_subway), as an alternative
 to the purely geographic k-NN adjacency used in build_adjacency() (model.py).
 
 Definition: two stations (sid_i, sid_j) are connected if, on at least one GTFS
-trip, their corresponding stops are consecutive (adjacent) in stop_sequence —
+trip, their corresponding stops are consecutive (adjacent) in stop_sequence,
 i.e. there is a direct track segment between them on some subway line. This is
 the standard notion of "line/track topology" as opposed to straight-line
 geographic proximity, and directly answers Reviewer 2's request for a

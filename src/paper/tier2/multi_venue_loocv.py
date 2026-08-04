@@ -5,18 +5,18 @@ Split design:
   With n=12 events across 4 types (3 instances each), LOTO-CV is the most
   demanding and scientifically honest protocol available:
 
-    Fold 1 — TEST: soccer_international (3 Copa América 2024)
+    Fold 1 - TEST: soccer_international (3 Copa América 2024)
              TRAIN: concert_pop + parade_street + race_marathon (9 events)
-    Fold 2 — TEST: concert_pop (3 Taylor Swift MetLife)
+    Fold 2 - TEST: concert_pop (3 Taylor Swift MetLife)
              TRAIN: soccer + parade + marathon (9)
-    Fold 3 — TEST: parade_street (3 NYC Pride)
+    Fold 3 - TEST: parade_street (3 NYC Pride)
              TRAIN: soccer + concert + marathon (9)
-    Fold 4 — TEST: race_marathon (3 NYC Marathon)
+    Fold 4 - TEST: race_marathon (3 NYC Marathon)
              TRAIN: soccer + concert + parade (9)
 
   Why LOTO rather than global LOO:
     Global LOO would allow the model to see Pride 2022 and 2024 before
-    evaluating on Pride 2023 — the event type, location, and schedule are
+    evaluating on Pride 2023 - the event type, location, and schedule are
     already seen.  LOTO asks the harder question: "can the model predict an
     event type it has never seen at all?"
 
@@ -75,9 +75,9 @@ HOURS = [f"h{i:02d}" for i in range(24)]
 def load_data(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, np.ndarray]:
     """
     Returns:
-        profiles  — daily_profiles.parquet for Manhattan
-        catalog   — expanded event catalog
-        embeddings — (n_events, 384) float32, or None if not generated yet
+        profiles  - daily_profiles.parquet for Manhattan
+        catalog   - expanded event catalog
+        embeddings -(n_events, 384) float32, or None if not generated yet
     """
     profiles = pd.read_parquet(root / "data/nyc/manhattan/daily_profiles.parquet")
     profiles["date"] = pd.to_datetime(profiles["date"])
@@ -370,7 +370,7 @@ def compute_confidence_intervals(df: pd.DataFrame) -> pd.DataFrame:
     pooled across all folds. Requires mae_llm_gnn to be non-null.
     """
     if "mae_llm_gnn" not in df.columns or df["mae_llm_gnn"].isna().all():
-        print("  LLM-GNN predictions not yet available — run model locally first.")
+        print("  LLM-GNN predictions not yet available - run model locally first.")
         return pd.DataFrame()
 
     n_boot = 5000

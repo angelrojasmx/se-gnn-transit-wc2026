@@ -1,5 +1,5 @@
 """
-build_dataset.py — Step 1: Build GNN training dataset from Manhattan parquet
+build_dataset.py - Step 1: Build GNN training dataset from Manhattan parquet
 =============================================================================
 Converts the filtered Manhattan hourly ridership parquet into the normalized
 daily profile dataset used to train the backbone GNN.
@@ -13,11 +13,11 @@ Usage:
     python src/demand/build_dataset.py
 
 Outputs (all in data/nyc/manhattan/):
-    daily_profiles.parquet       — (date, sid, h00..h23, daily_total, is_event)
-    event_labels.csv             — per-day event flag and Penn corridor ratio
-    baseline_profile.parquet     — mean hourly profile by (sid, day-of-week, hour)
-    baseline_daily_totals.parquet — median daily total by (sid, day-of-week)
-    station_lookup.csv           — station metadata (sid, name, lat, lon)
+    daily_profiles.parquet       -(date, sid, h00..h23, daily_total, is_event)
+    event_labels.csv             - per-day event flag and Penn corridor ratio
+    baseline_profile.parquet     - mean hourly profile by (sid, day-of-week, hour)
+    baseline_daily_totals.parquet - median daily total by (sid, day-of-week)
+    station_lookup.csv           - station metadata (sid, name, lat, lon)
 """
 
 from pathlib import Path
@@ -145,7 +145,7 @@ out_baseline = OUT_DIR / "baseline_profile.parquet"
 baseline_df.to_parquet(out_baseline, index=False)
 print(f"  → {out_baseline}  {baseline_df.shape}")
 
-# Baseline daily totals by (sid, day-of-week) — used as Feature 6 in GNN
+# Baseline daily totals by (sid, day-of-week) - used as Feature 6 in GNN
 normal_profiles["daily_total"] = normal_profiles["daily_total"].astype(float)
 baseline_daily = (
     normal_profiles.groupby(["sid", "dow"])["daily_total"]

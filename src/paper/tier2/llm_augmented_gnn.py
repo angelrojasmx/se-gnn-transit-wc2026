@@ -4,7 +4,7 @@ Tier 2 NYC: full LLM-augmented GNN pipeline.
 Four phases (run individually or together with --phase all):
 
   1. finetune:  Fine-tune FiLM layers on Copa América 2024 events.
-  2. loocv:     Leave-one-out cross-validation — the primary out-of-sample
+  2. loocv:     Leave-one-out cross-validation - the primary out-of-sample
                 evaluation reported in the paper.
   3. ablation:  Compare baseline vs. LLM-augmented on Copa América (in-sample
                 reference for maximum model capacity).
@@ -317,7 +317,7 @@ def run_ablation(
 
     ablation_df = pd.DataFrame(rows)
     if ablation_df.empty:
-        print(f"  ERROR: ablation_df is empty — Copa América dates not in dataset")
+        print(f"  ERROR: ablation_df is empty - Copa América dates not in dataset")
         print(f"  Sample dataset dates: {dataset.dates[:5]}")
         return ablation_df
 
@@ -326,7 +326,7 @@ def run_ablation(
     ablation_summary = ablation_df.drop(columns=profile_cols)
     ablation_summary.to_csv(OUT_NYC / "ablation_results.csv", index=False)
 
-    print("\n=== Ablation — Copa América 2024 ===")
+    print("\n=== Ablation - Copa América 2024 ===")
     print(ablation_summary[[
         "match", "mae_baseline", "mae_llm", "improvement_pct",
         "peak_hour_real", "peak_hour_llm",
@@ -407,7 +407,7 @@ def run_loocv(
         })
 
     if len(all_samples) < 2:
-        print(f"  ERROR: only {len(all_samples)} samples available — LOO-CV requires >=2")
+        print(f"  ERROR: only {len(all_samples)} samples available - LOO-CV requires >=2")
         return pd.DataFrame()
 
     print(f"  LOO-CV: {len(all_samples)} folds")
@@ -501,7 +501,7 @@ def plot_loocv(loocv_df: pd.DataFrame):
     ax.set_ylabel("MAE × 100 (hourly profile)", fontsize=10)
     ax.set_title(
         "Leave-One-Out CV: Baseline GNN vs LLM-Augmented (FiLM)\n"
-        "Copa América 2024 at MetLife — Penn Station Corridor (out-of-sample)",
+        "Copa América 2024 at MetLife - Penn Station Corridor (out-of-sample)",
         fontsize=10,
     )
     ax.legend(fontsize=9)
@@ -549,7 +549,7 @@ def plot_ablation(ablation_df: pd.DataFrame):
     axes[0].legend(fontsize=8)
     fig.suptitle(
         "Ablation Study: Copa América 2024 at MetLife\n"
-        "Baseline GNN vs LLM-Augmented (FiLM) — Penn Station Corridor",
+        "Baseline GNN vs LLM-Augmented (FiLM) - Penn Station Corridor",
         fontsize=11, y=1.02,
     )
     plt.tight_layout()
@@ -686,7 +686,7 @@ def plot_llm_vs_baseline(wc_llm: pd.DataFrame, wc_baseline_path: Path):
     ax.set_xlabel("Hour of day (ET)", fontsize=11)
     ax.set_ylabel("Delta share of daily ridership (pp)", fontsize=11)
     ax.set_title(
-        "LLM-Augmented vs Baseline GNN — Hourly Profile Difference WC2026\n"
+        "LLM-Augmented vs Baseline GNN - Hourly Profile Difference WC2026\n"
         "(Penn Station Corridor; positive = LLM shifts more demand to that hour)",
         fontsize=11,
     )
@@ -731,7 +731,7 @@ def run(phase: str = "all"):
 
     if phase in ("ablation", "all"):
         print("\n" + "=" * 55)
-        print("Phase 3: Ablation — in-sample Copa América 2024")
+        print("Phase 3: Ablation - in-sample Copa América 2024")
         print("=" * 55)
         ablation_df = run_ablation(dataset, A_hat, baseline_daily_df, model, encoder)
         plot_ablation(ablation_df)

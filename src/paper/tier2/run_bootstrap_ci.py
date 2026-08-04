@@ -185,7 +185,7 @@ print(agg_df.to_string(index=False))
 
 fig, axes = plt.subplots(1, 2, figsize=(13, 5))
 fig.suptitle(
-    "Bootstrap 95% CI — FiLM Improvement over Backbone (NYC, k-Shot LOTO)",
+    "Bootstrap 95% CI - FiLM Improvement over Backbone (NYC, k-Shot LOTO)",
     fontsize=13, fontweight="bold",
 )
 

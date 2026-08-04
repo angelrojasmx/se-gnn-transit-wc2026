@@ -1,5 +1,5 @@
 """
-compare_adjacency.py — I3 (Reviewer 2.1) sensitivity analysis: geographic k-NN vs
+compare_adjacency.py - I3 (Reviewer 2.1) sensitivity analysis: geographic k-NN vs
 track/line topology adjacency, trained under IDENTICAL procedure (same seed,
 same train/val split, same epochs) so the comparison is apples-to-apples.
 """

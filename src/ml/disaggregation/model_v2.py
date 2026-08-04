@@ -8,8 +8,8 @@ backbone GNN, enabling direct comparison without separate inference paths.
 
 FiLM is applied to the projected node representations before graph
 convolution, allowing the event context to scale and shift the initial
-station features before spatial aggregation. This design choice — applying
-conditioning once at the entry of the GCN stack rather than at each layer —
+station features before spatial aggregation. This design choice (applying
+conditioning once at the entry of the GCN stack rather than at each layer)
 reduces the number of additional trainable parameters while still providing
 a global semantic bias over the entire spatial aggregation process.
 
@@ -67,7 +67,7 @@ class EventConditionedGNN(nn.Module):
         self.hidden        = hidden
         self.event_emb_dim = event_emb_dim
 
-        # Backbone (identical to DisaggregationGNN — weights are loaded from
+        # Backbone (identical to DisaggregationGNN; weights are loaded from
         # a pretrained checkpoint and optionally frozen during FiLM fine-tuning)
         self.input_proj = nn.Sequential(
             nn.Linear(self.N_FEATURES, hidden),

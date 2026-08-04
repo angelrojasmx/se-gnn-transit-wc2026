@@ -1,5 +1,5 @@
 """
-prepare_data.py — Step 0: Convert raw MTA CSV to filtered Manhattan parquet
+prepare_data.py - Step 0: Convert raw MTA CSV to filtered Manhattan parquet
 ============================================================================
 Run this ONCE after downloading the raw MTA Subway Hourly Ridership CSV.
 
@@ -22,7 +22,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 
-# Manhattan station IDs — loaded from the lookup table included in the repo
+# Manhattan station IDs - loaded from the lookup table included in the repo
 LKP_PATH = ROOT / "data/nyc/mta_manhattan_lookup.csv"
 
 DATE_START = "2022-01-01"
@@ -102,7 +102,7 @@ def main(input_csv: Path):
         records.append(chunk)
 
         if total_rows % 5_000_000 < chunk_size:
-            print(f"  Processed {total_rows:,} rows — kept {kept_rows:,} Manhattan rows")
+            print(f"  Processed {total_rows:,} rows, kept {kept_rows:,} Manhattan rows")
 
     print(f"\nTotal rows read:  {total_rows:,}")
     print(f"Manhattan rows:   {kept_rows:,}")

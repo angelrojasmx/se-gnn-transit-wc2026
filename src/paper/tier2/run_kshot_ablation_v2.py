@@ -1,5 +1,5 @@
 """
-k-Shot LOTO-CV Ablation — expanded catalog (v2) with NFL as a fifth event type.
+k-Shot LOTO-CV Ablation - expanded catalog (v2) with NFL as a fifth event type.
 
 Multi-seed: each (type, k) combination is trained N_SEEDS times with different
 random seeds to quantify stochastic variance of FiLM optimisation.
@@ -8,7 +8,7 @@ Differences from run_kshot_ablation.py:
   - Uses event_catalog_expanded_v2.json (21 events: 12 original + 7 NFL + 2 from 2021)
   - Adds 'sports_nfl_metlife' as a fifth LOTO type
   - k=1 uses the k most recent examples (reverse=True)
-  - N_SEEDS runs per (type, k) — reports mean ± std
+  - N_SEEDS runs per (type, k) - reports mean ± std
 
 Outputs:
   outputs/paper/nyc/kshot_ablation_v2_full.csv        (one row per type/k/event/seed)
@@ -289,7 +289,7 @@ for held_out_type in LOTO_TYPES:
 results_df = pd.DataFrame(all_results)
 results_df.to_csv(OUT / "kshot_ablation_v2_full.csv", index=False)
 
-# Event-level means (averaged across seeds) — used by run_bootstrap_ci.py
+# Event-level means (averaged across seeds) - used by run_bootstrap_ci.py
 event_means = (results_df
     .groupby(["held_out_type", "k", "event_date"])
     .agg(
@@ -348,7 +348,7 @@ agg = (seed_type_means
 agg.to_csv(OUT / "kshot_ablation_v2_aggregate.csv", index=False)
 
 print("\n" + "=" * 70)
-print("RESULTS SUMMARY — v2 (5 event types, multi-seed)")
+print("RESULTS SUMMARY - v2 (5 event types, multi-seed)")
 print("=" * 70)
 print(f"{'Type':<25} {'k':>2} {'n_ev':>4} {'Backbone':>10} {'Film':>10} "
       f"{'Mean Imp':>10} {'Std':>8}")
@@ -401,7 +401,7 @@ ax2.set_ylabel("Mean improvement over backbone (%)", fontsize=11)
 ax2.set_title("Aggregate k-Shot Curve (5 types, mean ± std)", fontsize=11)
 ax2.set_xticks(ks)
 
-plt.suptitle(f"LLM-FiLM Few-Shot Adaptation — Catalog v2 (21 events, 5 types, {len(SEEDS)} seeds)",
+plt.suptitle(f"LLM-FiLM Few-Shot Adaptation - Catalog v2 (21 events, 5 types, {len(SEEDS)} seeds)",
              fontsize=11, fontweight="bold")
 plt.tight_layout()
 plt.savefig(FIG / "fig_kshot_ablation_v2.png", dpi=150, bbox_inches="tight")

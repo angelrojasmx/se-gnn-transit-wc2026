@@ -33,7 +33,7 @@ def build_adjacency(stations_df: pd.DataFrame, k: int = 8) -> torch.Tensor:
         k:           Number of geographic neighbours per station.
 
     Returns:
-        A_hat: FloatTensor (N, N) — normalised adjacency matrix.
+        A_hat: FloatTensor (N, N), normalised adjacency matrix.
     """
     N = len(stations_df)
     coords_rad = np.deg2rad(
@@ -204,7 +204,7 @@ def build_node_features(
     )
     features[:, 4] = dists / (dists.max() + 1e-8)
 
-    # Pre-compute baseline lookups once — shared by Features 5 and 6.
+    # Pre-compute baseline lookups once, shared by Features 5 and 6.
     if baseline_daily_df is not None:
         bl_map = (
             baseline_daily_df[baseline_daily_df["dow"] == dow]
@@ -217,7 +217,7 @@ def build_node_features(
     else:
         baseline_totals = None
 
-    # Feature 5: hub indicator — based on baseline medians, not today's totals,
+    # Feature 5: hub indicator, based on baseline medians, not today's totals,
     # to avoid leakage on high-ridership event days.
     if baseline_totals is not None:
         hub_threshold = np.percentile(baseline_totals, 80)

@@ -1,7 +1,7 @@
 """
 cdmx_gnn_loto_catchment_fix.py
 
-FORK of cdmx_gnn_loto.py — does NOT modify the original (fork-don't-edit
+FORK of cdmx_gnn_loto.py - does NOT modify the original (fork-don't-edit
 discipline; production script and its cached outputs/tables stay untouched).
 
 Purpose
@@ -18,12 +18,12 @@ noise at Santa Anita (Linea 4) / Deportivo 18 de Marzo (Linea 6) (+60% to +95%).
 This fork reimplements build_node_features() with a swappable F[2]:
 
   - "baseline"       : original coarse same-line indicator (re-run here,
-                        multi-seed, for a fair paired comparison — the
+                        multi-seed, for a fair paired comparison - the
                         production number in the paper is single-seed).
   - "catchment"       : binary, 1 only if station name in VENUE_CATCHMENT[venue].
   - "distance_decay"  : same_line * exp(-dist_km / DECAY_KM), DECAY_KM=3.0.
                         (3.0 km chosen as a rough walking-catchment scale;
-                        not tuned — documented as a design choice, not fit.)
+                        not tuned - documented as a design choice, not fit.)
 
 Everything else (GNN architecture, two-phase LOTO-CV protocol, venue-aware
 MAE, historical-average baseline) is imported unchanged from cdmx_gnn_loto.
@@ -34,7 +34,7 @@ The original run_loto_cv() seeds RNG ONCE per `run()` call and lets folds
 share one continuous RNG stream (order-dependent). To make this experiment
 resumable in small chunks (needed for sandboxed/time-boxed execution), each
 (variant, seed, fold) job here is independently seeded with `set_seed(seed)`
-right before that fold's model init — a deliberate deviation from the
+right before that fold's model init - a deliberate deviation from the
 original's exact RNG behavior, but standard/better practice for a controlled
 multi-seed comparison, and necessary so jobs can run in any order/batch size
 and still be reproducible. Documented here for transparency.
@@ -51,7 +51,7 @@ Usage
     python -m src.paper.tier2.cdmx_gnn_loto_catchment_fix --summarize
 
     # WC2026 leaky-station check per variant (uses seed=42 only, single
-    # forward pass per variant — this is a diagnostic re-check, not a stat test)
+    # forward pass per variant - this is a diagnostic re-check, not a stat test)
     python -m src.paper.tier2.cdmx_gnn_loto_catchment_fix --wc2026check
 """
 
@@ -83,13 +83,13 @@ SEEDS      = [42, 43, 44]
 # Extended to 12 seeds total (matching the 12-seed bar used elsewhere in this
 # revision, e.g. the leakage ablation / NFL-augmentation tests) for baseline
 # and distance_decay only. catchment already conclusively rejected on
-# accuracy grounds at n=3 (paired t=-13.9, p=0.005 vs baseline) — not worth
+# accuracy grounds at n=3 (paired t=-13.9, p=0.005 vs baseline) - not worth
 # the extra ~18min compute to extend it too.
 EXTENDED_SEEDS       = [45, 46, 47, 48, 49, 50, 51, 52, 53]
 EXTENDED_SEED_VARIANTS = ["baseline", "distance_decay"]
 N_EPOCHS   = 50   # matches production CLI default (argparse --epochs default=50),
-                   # NOT run()'s own function-signature default of 100 —
-                   # verified: __main__ invokes run(n_epochs=args.epochs) with
+                   # NOT run()'s own function-signature default of 100.
+                   # Verified: __main__ invokes run(n_epochs=args.epochs) with
                    # args.epochs defaulting to 50, so the cited production
                    # table (Hist 0.00106 / Backbone 0.00138 / SE-GNN 0.00112,
                    # +20.0%, cosine 0.972) was produced at 50 epochs/phase.

@@ -64,7 +64,7 @@ WC2026_VAN = [
 
 # Historical analogs
 
-# NFL MetLife (Giants/Jets) — secondary NYC analogs
+# NFL MetLife (Giants/Jets) - secondary NYC analogs
 # ~8 home games per team per season; listed dates are high-demand matches
 # cross-referenced against MTA hourly ridership data
 NFL_METLIFE_ANALOGS = [
@@ -92,7 +92,7 @@ PENN_STATION_SIDS = [164, 318]   # 34 St-Penn Station (A,C,E) and (1,2,3)
 HERALD_SQ_SID     = [607]        # 34 St-Herald Sq (B,D,F,M,N,Q,R,W)
 PENN_CORRIDOR     = PENN_STATION_SIDS + HERALD_SQ_SID
 
-HUDSON_YARDS_SID  = [471]        # 34 St-Hudson Yards (7) — secondary feeder
+HUDSON_YARDS_SID  = [471]        # 34 St-Hudson Yards (7) - secondary feeder
 
 # Vancouver: primary SkyTrain gateway to BC Place
 STADIUM_CHINATOWN_NAME = "Stadium"

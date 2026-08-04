@@ -8,13 +8,13 @@ vector w in R^N (summing to 1) rather than a 24-h temporal profile.
 
 LOTO-CV split design:
   4 event types x [24, 54, 120, 48] event-days:
-  Fold 1 — TEST: motorsport (F1, 24 days)
+  Fold 1 - TEST: motorsport (F1, 24 days)
            TRAIN: concert + music_festival + soccer
-  Fold 2 — TEST: music_festival (Vive Latino / Corona Capital, 54 days)
+  Fold 2 - TEST: music_festival (Vive Latino / Corona Capital, 54 days)
            TRAIN: motorsport + concert + soccer
-  Fold 3 — TEST: concert (Foro Sol / Palacio de los Deportes, 120 days)
+  Fold 3 - TEST: concert (Foro Sol / Palacio de los Deportes, 120 days)
            TRAIN: motorsport + music_festival + soccer
-  Fold 4 — TEST: soccer_domestic (Liga MX Azteca + Pumas UNAM, 48 days)
+  Fold 4 - TEST: soccer_domestic (Liga MX Azteca + Pumas UNAM, 48 days)
            TRAIN: motorsport + concert + music_festival
 
 Evaluation metric: venue-aware MAE.
@@ -27,9 +27,9 @@ Baselines:
   3. SE-GNN with FiLM conditioning (proposed model)
 
 Outputs (outputs/paper/cdmx/):
-  cdmx_loto_results.csv     — per-fold per-event MAE
-  cdmx_loto_summary.csv     — aggregated table for paper
-  cdmx_wc2026_spatial.csv   — projected spatial distribution for WC2026 matches
+  cdmx_loto_results.csv     - per-fold per-event MAE
+  cdmx_loto_summary.csv     - aggregated table for paper
+  cdmx_wc2026_spatial.csv   - projected spatial distribution for WC2026 matches
   outputs/paper/comparative/figures/
     fig_cdmx_loto_cv.png
     fig_cdmx_wc2026_spatial.png
@@ -71,9 +71,9 @@ OUT_FIGS.mkdir(parents=True, exist_ok=True)
 # For venue-aware MAE: evaluate only on stations within catchment
 VENUE_CATCHMENT: dict[str, list[str]] = {
     "Ciudad Deportiva": [
-        "ciudad deportiva",   # L9 — primary
-        "veldromo",           # L9 — adjacent
-        "mixiuhca",           # L9 — adjacent
+        "ciudad deportiva",   # L9 - primary
+        "veldromo",           # L9 - adjacent
+        "mixiuhca",           # L9 - adjacent
         "jamaica",            # L4/L9 transfer
     ],
     "Azteca": [
@@ -85,8 +85,8 @@ VENUE_CATCHMENT: dict[str, list[str]] = {
     "Pumas/CU": [
         "copilco",                    # L3
         "universidad",                # L3
-        "viveros/derechos humanos",   # L3 — adjacent (full name in station_lookup.csv)
-        "miguel ngel de quevedo",     # L3 — adjacent (accent-stripped in station_lookup.csv)
+        "viveros/derechos humanos",   # L3 - adjacent (full name in station_lookup.csv)
+        "miguel ngel de quevedo",     # L3 - adjacent (accent-stripped in station_lookup.csv)
     ],
 }
 
@@ -98,7 +98,7 @@ TYPE_TO_VENUE: dict[str, str] = {
     "soccer_domestic":  "Azteca",   # both Azteca and Pumas, primary = Azteca
 }
 
-# Event catalog — text descriptions for LLM encoder
+# Event catalog - text descriptions for LLM encoder
 # Parallel structure to data/event_catalog.py in NYC
 CDMX_EVENT_DESCRIPTIONS: dict[str, str] = {
     "motorsport": (
@@ -170,20 +170,20 @@ class SpatialDisaggregationGNN(nn.Module):
     demand across the Metro network.
 
     Args:
-        x         : (N, F) — node feature matrix
-        A_hat     : (N, N) — symmetrically normalised adjacency (CDMX Metro graph)
-        event_emb : (emb_dim,) optional — sentence embedding for FiLM conditioning
+        x         : (N, F) - node feature matrix
+        A_hat     : (N, N) - symmetrically normalised adjacency (CDMX Metro graph)
+        event_emb : (emb_dim,) optional - sentence embedding for FiLM conditioning
 
     Returns:
-        weights : (N,) — normalised spatial distribution (sums to 1.0)
+        weights : (N,) - normalised spatial distribution (sums to 1.0)
 
     Input features (F = 6):
-        0: log(baseline_riders + 1) normalised — station baseline ridership
-        1: log(distance_km + 1)     — Haversine distance to event venue
-        2: is_venue_line             — 1 if station is on the venue's primary Metro line
-        3: sin(2*pi * dow / 7)       — cyclic day-of-week encoding
+        0: log(baseline_riders + 1) normalised - station baseline ridership
+        1: log(distance_km + 1)     - Haversine distance to event venue
+        2: is_venue_line             - 1 if station is on the venue's primary Metro line
+        3: sin(2*pi * dow / 7)       - cyclic day-of-week encoding
         4: cos(2*pi * dow / 7)
-        5: log(scaled_baseline + 1) normalised — system-wide uniform uplift signal
+        5: log(scaled_baseline + 1) normalised - system-wide uniform uplift signal
     """
     N_FEATURES = 6
 
@@ -207,7 +207,7 @@ class SpatialDisaggregationGNN(nn.Module):
             nn.Dropout(dropout),
         )
 
-        # FiLM layers — only these are fine-tuned; backbone is frozen
+        # FiLM layers - only these are fine-tuned; backbone is frozen
         self.film_scale = nn.Sequential(
             nn.Linear(event_emb_dim, film_hidden),
             nn.ReLU(),
@@ -232,7 +232,7 @@ class SpatialDisaggregationGNN(nn.Module):
         self.decoder = nn.Linear(hidden, 1)
 
     def film_parameters(self):
-        """Return FiLM parameters only — used for fine-tuning with backbone frozen."""
+        """Return FiLM parameters only - used for fine-tuning with backbone frozen."""
         return list(self.film_scale.parameters()) + list(self.film_shift.parameters())
 
     def backbone_parameters(self):
@@ -255,7 +255,7 @@ class SpatialDisaggregationGNN(nn.Module):
         # FiLM conditioning (optional)
         if event_emb is not None:
             emb = event_emb.unsqueeze(0)  # (1, emb_dim)
-            gamma = self.film_scale(emb)  # (1, hidden) — broadcast
+            gamma = self.film_scale(emb)  # (1, hidden) - broadcast
             beta  = self.film_shift(emb)
             h = h * gamma + beta
 
@@ -349,11 +349,11 @@ def build_node_features(
 
     F[0]: log(baseline_riders + 1) normalised
     F[1]: log(distance_to_venue_km + 1)
-    F[2]: is_venue_line             — 1 if station is on the venue's primary line
+    F[2]: is_venue_line             - 1 if station is on the venue's primary line
     F[3]: sin(2*pi * dow / 7)
     F[4]: cos(2*pi * dow / 7)
     F[5]: log(scaled_baseline + 1) normalised
-          — baseline scaled uniformly by (proj_total / baseline_total).
+          - baseline scaled uniformly by (proj_total / baseline_total).
           This signals to the model "today Metro is busier than a typical day"
           without leaking which specific stations carry the elevated demand.
           Mirrors the NYC approach of scaling all station baselines by
@@ -523,7 +523,7 @@ def prepare_samples(
     for _, ev in events.iterrows():
         date_str    = ev['date']
         ev_cat      = ev['event_category']
-        # Use catalog venue directly — avoids misclassifying Pumas/CU events as Azteca
+        # Use catalog venue directly - avoids misclassifying Pumas/CU events as Azteca
         # TYPE_TO_VENUE is only a fallback if catalog venue column is absent
         catalog_venue = ev.get('venue', None)
         if pd.notna(catalog_venue) and str(catalog_venue) in VENUE_CATCHMENT:
@@ -627,7 +627,7 @@ def train_film(
             epoch_loss += loss.item()
 
         if (epoch+1) % 25 == 0:
-            print(f"    epoch {epoch+1}/{n_epochs} — loss: {epoch_loss/len(train_samples):.6f}")
+            print(f"    epoch {epoch+1}/{n_epochs} - loss: {epoch_loss/len(train_samples):.6f}")
 
     model.eval()
     return model
@@ -675,7 +675,7 @@ def run_loto_cv(
               f"TEST={test_type} ({len(test_samples)} events), "
               f"TRAIN={len(train_samples)} events")
 
-        # Re-initialise from backbone each fold — prevents weight leakage across test types
+        # Re-initialise from backbone each fold - prevents weight leakage across test types
         fold_model = SpatialDisaggregationGNN(
             hidden=hidden, dropout=0.2, n_gcn_layers=n_gcn_layers,
             event_emb_dim=EMBEDDING_DIM, film_hidden=64,
@@ -683,7 +683,7 @@ def run_loto_cv(
 
         # Phase 1: pre-train backbone only (no event_emb).
         # Keeping backbone training FiLM-free ensures the backbone baseline is
-        # not contaminated by FiLM conditioning — otherwise the "no-FiLM" MAE
+        # not contaminated by FiLM conditioning - otherwise the "no-FiLM" MAE
         # would be artificially inflated, overstating the FiLM improvement.
         optimizer_backbone = torch.optim.Adam(
             fold_model.backbone_parameters(), lr=lr,
@@ -702,7 +702,7 @@ def run_loto_cv(
 
         # Save backbone snapshot before FiLM fine-tuning.
         # This ensures the backbone baseline shares identical training history
-        # with the FiLM model — the only difference is the conditioning.
+        # with the FiLM model - the only difference is the conditioning.
         base_model = copy.deepcopy(fold_model)
         base_model.eval()
 
@@ -953,8 +953,8 @@ def run_wc2026_inference(
             )
 
             # Model predictions: absolute spatial distribution (sums to 1)
-            weights_base = model(x, A_hat, event_emb=None)   # (N,) — no FiLM
-            weights_llm  = model(x, A_hat, wc_emb)           # (N,) — FiLM conditioned
+            weights_base = model(x, A_hat, event_emb=None)   # (N,) - no FiLM
+            weights_llm  = model(x, A_hat, wc_emb)           # (N,) - FiLM conditioned
 
             # Convert to projected total riders per station
             total_riders_base = weights_base.numpy() * proj_total  # (N,)
@@ -1012,7 +1012,7 @@ def run_wc2026_inference(
     if has_empirical:
         emp_dist_t = torch.tensor(empirical_uplift_dist, dtype=torch.float32)
         az_emp_share = emp_dist_t[az_mask].sum().item()
-        print(f"\n  Cross-check — empirical 2019 Liga MX at Azteca:")
+        print(f"\n  Cross-check - empirical 2019 Liga MX at Azteca:")
         for i, row in stations_df[az_mask].reset_index(drop=True).iterrows():
             idx = stations_df[stations_df['sid']==row['sid']].index[0]
             print(f"    {row['name']} ({row['line']}): "
@@ -1065,8 +1065,8 @@ def plot_loto_results(results_df: pd.DataFrame):
     ], fontsize=9)
     ax.set_ylabel("Venue-Aware MAE × 1000 (spatial distribution)", fontsize=10)
     ax.set_title(
-        "LOTO-CV: Spatial Demand Disaggregation — CDMX Metro\n"
-        "GNN Backbone vs LLM-Augmented (FiLM) — Out-of-Sample by Event Type",
+        "LOTO-CV: Spatial Demand Disaggregation - CDMX Metro\n"
+        "GNN Backbone vs LLM-Augmented (FiLM) - Out-of-Sample by Event Type",
         fontsize=11,
     )
     ax.legend(fontsize=9)
@@ -1084,7 +1084,7 @@ def plot_wc2026_spatial(wc_df: pd.DataFrame, stations_df: pd.DataFrame):
     Two-panel figure for the WC2026 spatial demand projection.
 
     Left panel:  top 20 stations by projected extra riders (uplift share).
-    Right panel: Azteca catchment stations — uplift ratio vs. a normal day.
+    Right panel: Azteca catchment stations - uplift ratio vs. a normal day.
     """
     if wc_df.empty:
         return
@@ -1116,12 +1116,12 @@ def plot_wc2026_spatial(wc_df: pd.DataFrame, stations_df: pd.DataFrame):
     ax1.set_yticklabels([f"{r['station'].title()} ({r['line'].replace('linea ','L')})"
                          for _, r in top.iterrows()], fontsize=9)
     ax1.set_xlabel("Projected extra riders (above baseline, avg per WC2026 match)", fontsize=10)
-    ax1.set_title("Top 20 Stations — WC2026 Extra Demand\nCDMX Metro (Uplift Distribution)",
+    ax1.set_title("Top 20 Stations - WC2026 Extra Demand\nCDMX Metro (Uplift Distribution)",
                   fontsize=11)
     ax1.legend(fontsize=9)
     ax1.grid(axis="x", alpha=0.3)
 
-    # Panel B — Azteca catchment
+    # Panel B - Azteca catchment
     x2 = np.arange(len(az))
     ax2.bar(x2 - 0.2, az["uplift_base"], 0.35, label="GNN Backbone", color="#457b9d", alpha=0.8)
     ax2.bar(x2 + 0.2, az["uplift_llm"],  0.35, label="LLM-Augmented (FiLM)", color="#e63946", alpha=0.85)
@@ -1129,7 +1129,7 @@ def plot_wc2026_spatial(wc_df: pd.DataFrame, stations_df: pd.DataFrame):
     ax2.set_xticks(x2)
     ax2.set_xticklabels([s.title() for s in az["station"]], fontsize=10)
     ax2.set_ylabel("Uplift ratio (WC2026 / normal day)", fontsize=10)
-    ax2.set_title("Azteca Corridor Stations — Demand Uplift\nMetro Lines 2 & 12 (WC2026 avg)", fontsize=11)
+    ax2.set_title("Azteca Corridor Stations - Demand Uplift\nMetro Lines 2 & 12 (WC2026 avg)", fontsize=11)
     ax2.legend(fontsize=9)
     ax2.grid(axis="y", alpha=0.3)
 
@@ -1180,7 +1180,7 @@ def run(
 
     if phase in ("inference", "all"):
         print("\n" + "="*55)
-        print("Phase 2: WC2026 inference — spatial demand distribution")
+        print("Phase 2: WC2026 inference - spatial demand distribution")
         print("="*55)
         set_seed(seed)
         wc_df = run_wc2026_inference(

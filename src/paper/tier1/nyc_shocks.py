@@ -5,7 +5,7 @@ Method:
   1. Load MTA hourly ridership 2022-2024; aggregate to daily per station.
   2. Focus on Penn Station hub (sids 164, 318, 607): these feed MetLife via NJ Transit.
   3. Compute MAD-based robust z-score by station × day-of-week; identify top-N shocks.
-  4. Cross-reference with Copa América 2024 at MetLife — the closest historical analog.
+  4. Cross-reference with Copa América 2024 at MetLife, the closest historical analog.
   5. Compute uplift distribution (P25/P50/P75) and project for each WC2026 match.
 
 Outputs (outputs/paper/nyc/):

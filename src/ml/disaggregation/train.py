@@ -1,5 +1,5 @@
 """
-train.py — Backbone DisaggregationGNN training
+train.py - Backbone DisaggregationGNN training
 ===============================================
 Trains the temporal disaggregation backbone on Manhattan ridership data
 (2022-2023) and validates on the 2023-2024 held-out year.
@@ -14,8 +14,8 @@ Requires:
     data/nyc/manhattan/station_lookup.csv
 
 Outputs:
-    outputs/nyc/manhattan_model.pt       — best checkpoint (val loss)
-    outputs/nyc/manhattan_train_log.csv  — per-epoch loss history
+    outputs/nyc/manhattan_model.pt       - best checkpoint (val loss)
+    outputs/nyc/manhattan_train_log.csv  - per-epoch loss history
 """
 
 import sys
@@ -34,7 +34,7 @@ from ml.disaggregation.model import DisaggregationGNN, build_adjacency, build_no
 
 # Training configuration
 CFG = {
-    # Data — source domain: Manhattan only.
+    # Data - source domain: Manhattan only.
     # Bronx data is reserved for the transfer evaluation in evaluate_transfer.py.
     "data_dir":    str(ROOT / "data/nyc/manhattan"),
     "train_years": [2022, 2023],
@@ -141,7 +141,7 @@ def train():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Device: {device}")
 
-    # Load data — source domain: Manhattan only
+    # Load data - source domain: Manhattan only
     data_dir = Path(CFG["data_dir"])
     if not data_dir.exists():
         raise FileNotFoundError(
